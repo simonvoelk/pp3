@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "imports": {},
+  "update_files": [],
+  "xsd_overrides": {},
+  "manual_targets": {
+    "UNITS.XML": {
+      "element_name": "ITEM",
+      "complex_type_name": "UnitITEM_type"
+    },
+    "LOCAL_SYS_ID.XML": {
+      "element_name": "ITEM",
+      "complex_type_name": "SYS_ID_ITEM_type"
+    }
+  }
+}

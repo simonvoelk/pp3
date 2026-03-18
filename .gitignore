@@ -1,0 +1,10 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# SQLite journals and local temp DBs
+*.db-journal
+tmp_*.db
+
+# IDE files
+*.code-workspace

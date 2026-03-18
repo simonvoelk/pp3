@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "imports": {
+    "ALARM.XML|ALARMS|ALARMS_type": {
+      "top_pk": "SYS_ID_AL",
+      "nested_pk": {}
+    },
+    "FMCS_CS_J1939_0_J1939_DM.XML|Obj|ObjDM1_type": {
+      "top_pk": "SYS_ID",
+      "nested_pk": {}
+    },
+    "FMCS_CS_J1939_0_J1939_PDO.XML|PDO|PDO_type": {
+      "top_pk": "__AUTO__:PDO_id",
+      "nested_pk": {
+        "PDO::Mapping": "SYS_ID"
+      }
+    },
+    "MCS_CS_FB1_1_FB1_PDO.XML|TX_PDO|PDO_TX_type|xml:PDO|parent:TX": {
+      "top_pk": "SYS_ID",
+      "nested_pk": {}
+    },
+    "MCS_CS_FB1_1_FB1_PDO.XML|RX_PDO|PDO_RX_type|xml:PDO|parent:RX": {
+      "top_pk": "SYS_ID",
+      "nested_pk": {}
+    },
+    "MMS_ErrorCodeDescription.xml|MMS_ErrorCodes_Error|__el__Error|xml:Error|parent:MMS_ErrorCodes": {
+      "top_pk": "__AUTO__:MMS_ErrorCodes_Error_id",
+      "nested_pk": {}
+    },
+    "MMS_ErrorCodeDescription.xml|AlarmSpecificData_Definition|__el__Definition|xml:Definition|parent:AlarmSpecificData": {
+      "top_pk": "id",
+      "nested_pk": {}
+    },
+    "modbus_tcp_slave_reg.xml|RegisterList|RegisterList_type": {
+      "top_pk": "__AUTO__:RegisterList_id",
+      "nested_pk": {
+        "RegisterList::AllowedFunctionCodes": "__AUTO__:RegisterList__AllowedFunctionCodes_id",
+        "RegisterList::ItemList": "__AUTO__:RegisterList__ItemList_id",
+        "RegisterList__ItemList::Item": "SysID"
+      }
+    },
+    "REMOTE_SYS_ID.XML|ITEM|REMOTE_ITEM_type": {
+      "top_pk": "SYS_ID",
+      "nested_pk": {}
+    },
+    "SYSID_MAPPER.XML|Var|Var_type": {
+      "top_pk": "__AUTO__:Var_id",
+      "nested_pk": {
+        "Var::SourceList": "__AUTO__:Var__SourceList_id",
+        "Var__SourceList::Entry": "__AUTO__:Var__SourceList__Entry_id"
+      }
+    },
+    "UNITS.XML|ITEM|UnitITEM_type": {
+      "top_pk": "__AUTO__:ITEM_id",
+      "nested_pk": {}
+    },
+    "ALARM.XML|ALARMS|ALARMS_type|parent:ALARM_LIST": {
+      "top_pk": "SYS_ID_AL",
+      "nested_pk": {}
+    },
+    "modbus_tcp_slave_reg.xml|RegisterList|RegisterList_type|parent:Modbus": {
+      "top_pk": "__AUTO__:RegisterList_id",
+      "nested_pk": {
+        "RegisterList::AllowedFunctionCodes": "__AUTO__:RegisterList__AllowedFunctionCodes_id",
+        "RegisterList::ItemList": "__AUTO__:RegisterList__ItemList_id",
+        "RegisterList__ItemList::Item": "SysID"
+      }
+    },
+    "REMOTE_SYS_ID.XML|REMOTE_SYS_ID_XML__ITEM|REMOTE_ITEM_type|xml:ITEM|parent:REMOTE_SYS_ID_XML": {
+      "top_pk": "SYS_ID",
+      "nested_pk": {}
+    },
+    "UNITS.XML|UNITS_XML__ITEM|UnitITEM_type|xml:ITEM|parent:UNITS_XML": {
+      "top_pk": "__AUTO__:UNITS_XML__ITEM_id",
+      "nested_pk": {}
+    }
+  },
+  "update_files": [
+    "UNITS.XML",
+    "SYSID_MAPPER.XML",
+    "REMOTE_SYS_ID.XML",
+    "modbus_tcp_slave_reg.xml",
+    "MMS_ErrorCodeDescription.xml",
+    "MCS_CS_FB1_1_FB1_PDO.XML",
+    "FMCS_CS_J1939_0_J1939_PDO.XML",
+    "I_SPSIO.XML",
+    "ALARM.XML"
+  ],
+  "xsd_overrides": {},
+  "manual_targets": {
+    "FMCS_CS_J1939_0_J1939_DM.XML": {
+      "element_name": "Obj",
+      "complex_type_name": "ObjDM1_type"
+    },
+    "FMCS_CS_J1939_0_J1939_PDO.XML": {
+      "element_name": "PDO",
+      "complex_type_name": "PDO_type"
+    },
+    "SYSID_MAPPER.XML": {
+      "element_name": "Var",
+      "complex_type_name": "Var_type"
+    }
+  }
+}

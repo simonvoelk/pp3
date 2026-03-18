@@ -1,0 +1,916 @@
+﻿;;;;;;;;;;;;;;;;;;/P900_BVNG;/GenoNG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;Device_Design_MMS_Interface;Device_Design_MMS_Interface;SXU;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+RX;SYS_ID Name;SYS_ID;Name;PV_ID;COB_ID;MUX;SourceNode (2=ECU, 3=EMU, 31=EIM,              7 = CPM,             5 = ESD);Unit;skal_faktor;ATTRIBUTES;"Errorcode 
+Mapping";ZKP;MMS Name;;ab IF Version;Kommentar;;PTC Trace ID BVNG;PTC Trace ID GLNG;"Querverweis
+SXU / ECU";SXU Slot;Name;CAN_ID;MUX;Unit;Bewertung;Alarmpriority;Skal_Faktor;Source_Node; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; 
+;P_Gas_RailBankA;0010.012202.010.000.0;P-Gas A;109001;1048;0;2;bar;100000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_Gas_RailBankA;0010.012202.104.000.0;LM LO P-Gas A;109002;1048;1;2;bar;100000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_P_Gas_RailBankA;0010.012202.114.000.0;LM LOLO P-Gas A;109003;1048;2;2;bar;100000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_Gas;0010.012101.010.000.0;T-Gas;109004;1048;3;2;degC;100;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_T_Gas;0010.012101.104.000.0;LM LO T-Gas;109005;1048;4;2;degC;100;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_T_Gas;0010.012101.114.000.0;LM LOLO T-Gas;109006;1048;5;2;degC;100;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ActualGasConsumption;0010.012301.010.000.0;Actual Gas Consumption;109007;1048;6;2;kg/h;1000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;TripGasConsumption;0010.012302.010.000.0;Trip Gas Consumption;109008;1048;7;2;t;1000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;TotalGasConsumption;0010.012304.010.000.0;Total Gas Consumption;109009;1048;8;2;t;1000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;GRU_State;0010.012001.010.000.0;GRU State;109010;1048;9;2;digit;1;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_Gas_Inlet;0010.012201.010.000.0;P-Gas Inlet;109011;1048;10;2;bar;100000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_Gas_Outlet;0010.012201.010.010.0;P-Gas Outlet;109012;1048;11;2;bar;100000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_Gas_GRU;0010.012102.010.000.0;T-Gas GRU;109013;1048;12;2;degC;100;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_Gas_SetPoint;0010.012203.010.000.0;P-Gas Set Point;109014;1048;13;2;bar;100000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;GasIgnitionControlReady;0010.087000.010.000.0;MIC Ready;109015;1048;14;2;Bool;1;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;GasIgnitionControlActive;0010.087001.010.000.0;MIC Firing Active;109016;1048;15;2;Bool;1;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ActualValueThrottleFlapA;0010.087101.010.000.0;Throttle Flap A Actual Value;109017;1048;16;2;%;1000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ActualValueThrottleFlapB;0010.087101.010.010.0;Throttle Flap B Actual Value;109018;1048;17;2;%;1000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_Gas_RailBankB;0010.012202.010.010.0;P-Gas B;109019;1048;18;2;bar;100000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;MeanTripGasConsumption;0010.012302.010.010.0;Mean Trip Gas Consumption;109020;1048;19;2;kg/h;1000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_Gas_RailBankA;0010.012202.154.000.0;LM HI P-Gas A;109021;1048;20;2;bar;100000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_P_Gas_RailBankA;0010.012202.164.000.0;LM HIHI P-Gas A;109022;1048;21;2;bar;100000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_Gas_RailBankB;0010.012202.104.010.0;LM LO P-Gas B;109023;1048;22;2;bar;100000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_P_Gas_RailBankB;0010.012202.114.010.0;LM LOLO P-Gas B;109024;1048;23;2;bar;100000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_Gas_RailBankB;0010.012202.154.010.0;LM HI P-Gas B;109025;1048;24;2;bar;100000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_P_Gas_RailBankB;0010.012202.164.010.0;LM HIHI P-Gas B;109026;1049;0;2;bar;100000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;MaxScaleGasConsumption;0010.012303.010.000.0;Max. Scale Gas Consumption;109027;1049;1;2;kg/h;1000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ActualGasConsumptionBargraph;0010.012301.010.010.0;Actual Gas Cons. Bargraph;109028;1049;2;2;%;1000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;MeanTripGasConsumptionBargraph;0010.012302.010.020.0;Mean Trip Gas Cons. Bargraph;109029;1049;3;2;%;1000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_Gas;0010.012101.154.000.0;LM HI T-Gas;109030;1049;4;2;degC;100;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_Gas;0010.012101.164.000.0;LM HIHI T-Gas;109031;1049;5;2;degC;100;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_Coolant;0010.015101.154.000.0;;109054;1050;3;2;bar;100000;0;;;LM HI P-Coolant;;;GasMobil, doppelt vorhanden! Wird auch durch 110717 empfangen!;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ExternalStopActiveECU;0010.042104.010.000.0;External Stop Active (ECU);110001;1000;0;2;digit;1;0;;2.7001.008;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EngineSpeed;0010.000501.010.000.0;Engine Speed;110002;1000;1;2;rpm;10;0;;"1.2500.044
+2.2010.123 ECU7 AIO 1.5";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;InjectionQuantity;0010.002001.010.000.0;Injection Quantity;110004;1000;3;2;mm3/H;100;0;;1.1020.603;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;IdleSpeed;0010.000503.010.000.0;Idle Speed;110005;1000;4;2;rpm;10;0;;1.2500.026;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;NominalSpeed;0010.000504.010.000.0;Nominal Speed;110006;1000;5;2;rpm;10;0;;2.1060.040;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EngineLoadReserve;0010.002004.010.000.0;Engine Load Reserve;110007;1000;6;2;%;1000;0;;2.7000.004;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;InjectionLimitation;0010.002010.010.000.0;Injection Limitation;110008;1000;7;2;Bool;1;0;;2.1000.040;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderCutoutMask;0010.057502.010.000.0;Cylinder Cutout Mask;110011;1000;10;2;digit;1;0;;1.3000.017;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SpeedDemandSource;0010.000605.010.000.0;Speed Demand Source;110012;1000;11;2;digit;1;0;;2.1060.011;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SpeedDemandFailMode;0010.000603.010.000.0;Speed Demand Fail Mode;110013;1000;12;2;Bool;1;0;;2.7000.007;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;TestOverspeedActive;0010.043401.010.000.0;Test Overspeed Active;110015;1000;14;2;Bool;1;0;;2.2510.010;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;FeedbackSpeedDemand;0010.000604.010.020.0;Feedback Speed Demand;110016;1000;15;2;rpm;10;0;;2.1060.051;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;FeedbackSpeedDemandeff;0010.000604.010.030.0;Feedback Speed Demand eff.;110017;1000;16;2;rpm;10;0;;2.1060.003;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;FeedbackIncreaseSpeed;0010.000601.010.000.0;Feedback Increase Speed;110018;1000;17;2;Bool;1;0;;2.2010.103;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;FeedbackDecreaseSpeed;0010.000602.010.000.0;Feedback Decrease Speed;110019;1000;18;2;Bool;1;0;;2.2010.104;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EngineSpeedfiltered;0010.000501.010.010.0;Engine Speed filtered;110022;1000;21;2;rpm;10;0;;2.2500.036;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;FB_LocalModeECU;0010.040201.010.000.0;FB Local  Mode (ECU);110024;1000;23;2;Bool;1;0;;2.1060.071;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_InjectionQuantity;0010.002001.014.000.0;LM HI Injection Quantity;110025;1000;24;2;mm3/H;100;0;;---;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_LubeOil;0010.025101.010.000.0;P-Lube Oil;110026;1001;0;2;bar;100000;0;;1.0100.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_LubeOil;0010.025101.104.000.0;LM LO P-Lube Oil;110027;1001;1;2;bar;100000;0;;"1.0100.015
+1.5100.896 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_P_LubeOil;0010.025101.114.000.0;LM LOLO P-Lube Oil;110028;1001;2;2;bar;100000;0;;"1.0100.016
+1.5100.906 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_Crankcase;0010.009101.010.000.0;P-Crankcase;110031;1001;5;2;mbar;100;0;;1.0106.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_Crankcase;0010.009101.154.000.0;LM HI P-Crankcase;110032;1001;6;2;mbar;100;0;;"1.0106.016
+1.5100.326 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_P_Crankcase;0010.009101.164.000.0;LM HIHI P-Crankcase;110033;1001;7;2;mbar;100;0;;"1.0106.018
+1.5100.336 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_P_Crankcase;0010.009101.155.000.0;HI P-Crankcase;110034;1001;8;2;Bool;1;FB1Alarm;63;;;;ED1_20(BL120);EIM Refitbox ECU4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_P_Crankcase;0010.009101.165.000.0;HIHI P-Crankcase;110035;1001;9;2;Bool;1;FB1Alarm;64;;;;ED1_20(BL120);EIM Refitbox ECU4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_Coolant;0010.015101.010.000.0;P-Coolant;110036;1001;10;2;bar;100000;0;;1.0101.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_Coolant;0010.015101.104.000.0;LM LO P-Coolant;110037;1001;11;2;bar;100000;0;;"1.0101.015
+1.5100.726 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_P_Coolant;0010.015101.114.000.0;LM LOLO P-Coolant;110038;1001;12;2;bar;100000;0;;"1.0101.016
+1.5100.736 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_CoolantIntercooler;0010.015104.010.000.0;P-Coolant Intercooler;110041;1001;15;2;bar;100000;0;;;P-Coolant Intercooler ;;ED1_17 (GLNG_BL30);#13989;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_CoolantIntercooler;0010.015104.104.000.0;LM LO P-Coolant Intercooler;110042;1001;16;2;bar;100000;0;;;LM LO P-Coolant Intercooler ;;ED1_17 (GLNG_BL30);#13989;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_P_CoolantIntercooler;0010.015104.114.000.0;LM LOLO P-Coolant Intercooler;110043;1001;17;2;bar;100000;0;;;LM LOLO P-Coolant Intercooler ;;ED1_17 (GLNG_BL30);#13989;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_P_CoolantIntercooler;0010.015104.105.000.0;LO P-Coolant Intercooler;110044;1001;18;2;Bool;1;FB1Alarm;415;;;;ED1_20(BL120);EIM Refitbox ECU4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LOLO_P_CoolantIntercooler;0010.015104.115.000.0;LOLO P-Coolant Intercooler;110045;1001;19;2;Bool;1;FB1Alarm;416;;;;ED1_20(BL120);EIM Refitbox ECU4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_FuelafterFilter;0010.020101.010.000.0;P-Fuel after Filter;110046;1001;20;2;bar;100000;0;;1.0102.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_ChargeAir;0010.008101.010.000.0;P-Charge Air;110049;1001;23;2;bar;100000;0;;1.0103.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_ChargeAirB;0010.008101.010.020.0;P-Charge Air B;110051;1002;0;2;bar;100000;0;;1.0149.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_FuelCommonRail;0010.020103.010.000.0;P-Fuel Common Rail;110053;1002;2;2;bar;100000;0;;2.2010.102;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ETC1Speed;0010.056001.010.010.0;ETC 1 Speed;110057;1002;6;2;krpm;10000;0;;1.3010.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ETC2Speed;0010.056001.010.020.0;ETC 2 Speed;110059;1002;8;2;krpm;10000;0;;1.3010.002;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_ETC2Speed;0010.056001.155.020.0;HI ETC 2 Speed;110060;1002;9;2;Bool;1;FB1Alarm;36;;;;ED1_20(BL120);EIM Refitbox ECU4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;Cmd_ETC3CutIn;0010.056002.013.030.0;Cmd ETC 3 Cut In;110061;1002;10;2;Bool;1;0;;2.2010.109;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;Cmd_ETC4CutIn;0010.056002.013.040.0;Cmd ETC 4 Cut In;110062;1002;11;2;Bool;1;0;;2.2010.113;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;OperatingHoursseconds;0010.075502.010.000.0;Operating Hours (seconds);110063;1002;12;2;sec;1;0;;1.8009.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LO P-Fuel Common Rail;0010.020103.105.000.0;LO P-Fuel Common Rail;110064;1002;13;2;Bool;1;FB1Alarm;83;;;;ED1_20(BL120);EIM Refitbox ECU4;;;;;;;;;;;;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;;
+;HI P-Fuel Common Rail;0010.020103.155.000.0;HI P-Fuel Common Rail;110065;1002;14;2;Bool;1;FB1Alarm;82;;;;ED1_20(BL120);EIM Refitbox ECU4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;FeedbackOverride;0010.043201.010.000.0;Feedback Override;110066;1002;15;2;Bool;1;0;;2.7002.003;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EngineRunning;0010.000505.010.000.0;Engine Running;110068;1002;17;2;Bool;1;0;;2.2010.105;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;Cmd_ETC2CutIn;0010.056002.013.020.0;Cmd ETC 2 Cut In;110069;1002;18;2;Bool;1;0;;1.3010.003;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_ETC2Speed;0010.056001.165.020.0;HIHI ETC 2 Overspeed;110071;1002;20;2;Bool;1;FB1Alarm;37;;;;ED1_20(BL120);EIM Refitbox ECU4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;InjectionQuantity0_120;0010.002003.010.000.0;Injection Quantity 0-120%;110072;1002;21;2;%;1000;0;;1.1020.200;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;InjectionLimit0_120;0010.002003.014.000.0;Injection Limit 0-120%;110073;1002;22;2;%;1000;0;;1.1020.201;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderCutout;0010.057501.010.000.0;Cylinder Cutout;110074;1002;23;2;Bool;1;0;;2.2010.107;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ECUFailureCodes;0010.078003.010.000.0;ECU Failure Codes;110075;1002;24;2;digit;1;0;;2.8009.015;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_CoolantLevelInterCooler;0010.015302.105.000.0;LO Coolant Level Intercooler;110099;1003;23;2;Bool;1;FB1Alarm;44;;;;ED1_20(BL120);EIM Refitbox ECU4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;PDU_1Failure;0010.057205.010.010.0;PDU 1 Failure;110101;1004;0;2;digit;1;0;;1.8000.0**;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;PDU_2Failure;0010.057205.010.020.0;PDU 2 Failure;110102;1004;1;2;digit;1;0;;1.8000.0**;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;FailureStatusTransOutputs;0010.075303.010.000.0;Failure Status Trans. Outputs;110103;1004;2;2;digit;1;0;;2.7000.008;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ECUPS_Voltage;0010.050101.010.000.0;ECU PS Voltage;110104;1004;3;2;V;1000;0;;2.0140.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_IntakeAir;0010.005201.154.000.0;LM HI T-Intake Air;110111;1004;10;2;degC;100;0;;"1.0123.017
+1.5100.126 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SystemState;0010.057302.010.000.0;System State;110114;1004;13;2;digit;1;0;;2.1063.100;;;;;1;-;360639;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;OperatingHours;0010.075501.010.000.0;Operating Hours;110115;1004;14;2;h;1;0;;1.8009.002;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_ECUDefect;0010.057303.205.000.0;AL ECU Defect;110116;1004;15;2;digit;1;FB1Alarm;;2.8009.012;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EngineSpeedCamshaft;0010.000506.010.000.0;Engine Speed Camshaft;110117;1004;16;2;rpm;10;0;;1.2500.039;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_RCSSpeedDemandDefect_I;0010.000609.205.000.0;AL RCS Speed Demand Defect;110118;1004;17;2;digit;1;0;~266,836;2.1060.950;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ActualFuelConsumption;0010.020404.010.000.0;Actual Fuel Consumption;110119;1004;18;2;l/h;1000;0;;1.8009.011;;;;;1;-;350167;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;TripFuelConsumption;0010.020401.010.000.0;Trip Fuel Consumption;110120;1004;19;2;l;10;0;;1.8009.017;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;TotalFuelConsumption;0010.020405.010.000.0;Total Fuel Consumption;110121;1004;20;2;l;10;0;;1.8009.016;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_Coolant;0010.015201.010.000.0;T-Coolant;110126;1005;0;2;degC;100;0;;1.0120.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_Coolant;0010.015201.154.000.0;LM HI T-Coolant;110127;1005;1;2;degC;100;0;;"1.0120.017
+1.5100.766 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_Coolant;0010.015201.164.000.0;LM HIHI T-Coolant;110128;1005;2;2;degC;100;0;;"1.0120.018
+1.5100.776 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ChargeAir;0010.008201.010.000.0;T-Charge Air;110131;1005;5;2;degC;100;0;;1.0121.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_ChargeAir;0010.008201.154.000.0;LM HI T-Charge Air;110132;1005;6;2;degC;100;0;;"1.0121.017
+1.5100.146 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ChargeAirB;0010.008201.010.020.0;T-Charge Air B;110134;1005;8;2;degC;100;0;;1.0146.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_ChargeAirB;0010.008201.154.020.0;LM HI T-Charge Air B;110135;1005;10;2;degC;100;0;;"1.0146.017
+1.5100.166 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_ChargeAirB;0010.008201.164.020.0;LM HIHI T-Charge Air B;110136;1005;9;2;degC;100;0;;"1.0146.018
+1.5100.176 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_CoolantIntercooler;0010.015202.010.000.0;T-Coolant Intercooler;110137;1005;11;2;degC;100;0;;1.0124.001;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_CoolantIntercooler;0010.015202.154.000.0;LM HI T-Coolant Intercooler;110138;1005;12;2;degC;100;0;;"1.0124.017
+1.5100.826 ECU9_2.4";;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_CoolantIntercooler;0010.015202.155.000.0;HI T-Coolant Intercooler;110139;1005;13;2;Bool;1;FB1Alarm;9;;;;ED1_20(BL120);EIM Refitbox ECU4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_LubeOil;0010.025201.010.000.0;T-Lube Oil;110140;1005;14;2;degC;100;0;;"1.0125.001 ECU7
+1.0125.050 ECU9";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_LubeOil;0010.025201.154.000.0;LM HI T-Lube Oil;110141;1005;15;2;degC;100;0;;"1.0125.017
+1.5100.986 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_LubeOil;0010.025201.164.000.0;LM HIHI T-Lube Oil;110142;1005;16;2;degC;100;0;;"1.0125.018
+1.5100.996 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustCombinedA;0010.006401.010.010.0;T-Exhaust Combined A;110145;1005;19;2;degC;100;0;;1.0126.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_ExhaustCombinedA;0010.006401.154.010.0;LM HI T-Exhaust Combined A;110146;1005;20;2;degC;100;0;;"1.0126.017
+1.5100.366 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustCombinedB;0010.006401.010.020.0;T-Exhaust Combined B;110148;1005;22;2;degC;100;0;;1.0127.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_ExhaustCombinedB;0010.006401.154.020.0;LM HI T-Exhaust Combined B;110149;1005;23;2;degC;100;0;;"1.0127.017
+1.5100.386 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_IntakeAir;0010.005201.010.000.0;T-Intake Air;110151;1006;0;2;degC;100;0;;"1.0123.001 ECU7
+1.0123.053 ECU9";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_Fuel;0010.020201.010.000.0;T-Fuel;110152;1006;1;2;degC;100;0;;1.0122.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_LubeOilbeforeFilter;0010.025102.010.000.0;P-Lube Oil before Filter;110153;1006;2;2;bar;100000;0;;1.0109.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_LubeOilFilterDiff;0010.025103.010.000.0;P-Lube Oil Filter Diff.;110154;1006;3;2;bar;100000;0;;1.0154.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_LubeOilFilterDiff;0010.025103.154.000.0;LM HI P-Lube Oil Filter Diff.;110155;1006;4;2;bar;100000;0;;"1.0154.017
+1.5100.876 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_LubeOilOilPan;0010.025202.010.000.0;T-Lube Oil (Oil Pan);110157;1006;6;2;degC;100;0;;1.0137.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_FuelafterFilter;0010.020101.104.000.0;LM LO P-Fuel after Filter;110158;1006;7;2;bar;100000;0;;"1.0102.015
+1.5100.536 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_P_FuelafterFilter;0010.020101.114.000.0;LM LOLO P-Fuel after Filter;110159;1006;8;2;bar;100000;0;;"1.0102.016
+1.5100.546 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_ETC1Speed;0010.056001.154.010.0;LM HI ETC 1 Speed;110160;1006;9;2;krpm;10000;0;;"1.3010.020
+1.5100.226 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_ETC2Speed;0010.056001.154.020.0;LM HI ETC 2 Speed;110161;1006;10;2;krpm;10000;0;;"1.3010.019
+1.5100.246 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_EngineSpeed;0010.000501.164.000.0;LM HIHI Engine Speed;110162;1006;11;2;rpm;10;0;;1.2510.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_ChargeAir;0010.008101.154.000.0;LM HI P-Charge Air;110163;1006;12;2;bar;100000;0;;"1.0103.015
+1.5100.086 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_ChargeAirB;0010.008101.154.020.0;LM HI P-Charge Air B;110164;1006;13;2;bar;100000;0;;"1.0149.015
+1.5100.106 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_ChargeAir;0010.008201.164.000.0;LM HIHI T-Charge Air;110167;1006;16;2;degC;100;0;;"1.0121.018
+1.5100.156 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ECU;0010.057304.010.000.0;T-ECU;110169;1006;18;2;degC;100;0;;1.0132.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_ETC1Speed;0010.056001.164.010.0;LM HIHI ETC 1 Speed;110172;1006;21;2;krpm;10000;0;;"1.3010.025
+1.5100.236 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_ETC2Speed;0010.056001.164.020.0;LM HIHI ETC 2 Speed;110173;1006;22;2;krpm;10000;0;;"1.3010.024
+1.5100.256 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_CommonRailLeakage;0010.020104.205.000.0;AL Common Rail Leakage;110185;1007;13;2;Bool;1;FB1Alarm;81;;;;ED1_20(BL120);EIM Refitbox ECU4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;EngineSpeedCrankshaft;0010.000507.010.000.0;Engine Speed Crankshaft;110186;1007;10;2;rpm;10;0;;1.2500.034;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_ETCIdleSpeed;0010.056006.155.010.0;HI ETC Idle Speed;110187;1007;9;2;Bool;1;FB1Alarm;29;;;;ED1_20(BL120);EIM Refitbox ECU4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_ETCSpeedDifference;0010.056001.155.000.0;HI ETC Speed Difference;110188;1007;11;2;Bool;1;FB1Alarm;38;;;;ED1_20(BL120);EIM Refitbox ECU4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_ETC2CutInFail;0010.056002.205.020.0;AL ETC 2 Cut in Fail;110189;1007;12;2;Bool;1;FB1Alarm;39;;;;ED1_20(BL120);EIM Refitbox ECU4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;EngineSpeedDemandFeedback;0010.000604.010.010.0;Engine Speed Demand Feedback;110195;1007;19;2;rpm;10;0;;2.1060.070;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SpeedDemandAnalogInput;0010.000604.010.040.0;Speed Demand Analog Input;110196;1007;20;2;rpm;10;0;;2.0280.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;MeanTripFuelConsumption;0010.020402.010.000.0;Mean Trip Fuel Consumption;110198;1007;22;2;l/h;1000;0;;1.8009.020;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_Fuel;0010.020201.164.000.0;LM HIHI T-Fuel;110199;1007;23;2;degC;100;0;;"1.0122.018
+1.5100.606 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ActualP_Grade;0010.057404.010.000.0;Actual P-Grade;110205;1008;4;2;%;1000;0;;2.1060.200;;;;;1;-;349929;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;InfoTextECU;0010.075700.010.000.0;InfoTextECU;110212;1008;11;2;digit;1;InfoText;;2.2010.002;;;;;1;-;383278;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;InjectioninRelationtoDBR;0010.002002.010.000.0;Injection in Relation to DBR;110216;1008;15;2;%;1000;0;;1.1020.202;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;Cmd_ETC1CutIn;0010.056002.013.010.0;Cmd ETC 1 Cut In;110217;1008;16;2;Bool;1;0;;1.3010.012;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_FuelbeforeFilter;0010.020102.010.000.0;P-Fuel before Filter;110218;1008;17;2;bar;100000;0;;1.0113.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;RatedPower;0010.002502.010.000.0;Rated Power;110219;1008;18;2;kW;1000;0;;1.1005.021;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_FuelFilterDiff;0010.020105.010.000.0;P-Fuel Filter Diff.;110231;1009;5;2;bar;100000;0;;1.0114.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;TripDuration;0010.020403.010.000.0;Trip Duration;110255;1010;4;2;h;1;0;;1.8009.027;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;StatusTransistorOutputs;0010.075304.010.000.0;Status Transistor Outputs;110257;1010;6;2;digit;1;0;;2.7000.010;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ChargeAirSeqValve;0010.008202.010.000.0;T-Charge Air Seq Valve;110258;1010;7;2;degC;100;0;;1.0128.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_ChargeAirSeqValve;0010.008202.154.000.0;LM HI T-Charge Air Seq Valve;110259;1010;8;2;degC;100;0;;1.0128.017;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_ChargeAirSeqValve;0010.008202.164.000.0;LM HIHI T-Charge Air Seq Valve;110260;1010;9;2;degC;100;0;;1.0128.018;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_ExhaustCombinedA;0010.006401.164.010.0;LM HIHI T-Exhaust Combined A;110261;1010;10;2;degC;100;0;;"1.0126.018
+1.5100.376 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_ExhaustCombinedB;0010.006401.164.020.0;LM HIHI T-Exhaust Combined B;110262;1010;11;2;degC;100;0;;"1.0127.018
+1.5100.396 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_ECUPS_Voltage;0010.050101.104.000.0;LM LO ECU PS Voltage;110266;1010;15;2;V;1000;0;;"2.0140.016
+1.5101.266 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_ECUPS_Voltage;0010.050101.114.000.0;LM LOLO ECU PS Voltage;110267;1010;16;2;V;1000;0;;"2.0140.015
+1.5101.276 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_ECUPS_Voltage;0010.050101.154.000.0;LM HI ECU PS Voltage;110268;1010;17;2;V;1000;0;;"2.0140.017
+1.5101.286 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_ECUPS_Voltage;0010.050101.164.000.0;LM HIHI ECU PS Voltage;110269;1010;18;2;V;1000;0;;"2.0140.018
+1.5101.296 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_FuelFilterDiff;0010.020105.154.000.0;LM HI P-Fuel Filter Diff.;110285;1011;9;2;bar;100000;0;;"1.0114.017
+1.5100.516 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CoolantLevel;0010.015301.010.000.0;Coolant Level;110290;1011;14;2;Bool;1;0;;1.0152.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;FuelLeakageLevel;0010.020301.010.000.0;Fuel Leakage Level;110291;1011;15;2;Bool;1;0;;1.0151.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_Fuel;0010.020201.154.000.0;LM HI T-Fuel;110298;1011;22;2;degC;100;0;;"1.0122.017
+1.5100.596 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_ECU;0010.057304.154.000.0;LM HI T-ECU;110300;1011;24;2;degC;100;0;;"1.0132.017
+1.5101.076 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_ETCSpeedDifference;0010.056001.165.000.0;HIHI ETC Speed Difference;110307;1012;6;2;Bool;1;FB1Alarm;;;;;ED1_20(BL120);EIM Refitbox ECU4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;ETC3Speed;0010.056001.010.030.0;ETC 3 Speed;110318;1012;17;2;krpm;10000;0;;1.3010.006;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ETC4Speed;0010.056001.010.040.0;ETC 4 Speed;110319;1012;18;2;krpm;10000;0;;1.3010.007;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ECUPowerLimitationExpected;0010.043101.010.010.0;ECU Power Limitation Expected;110320;1012;19;2;Bool;1;0;;2.8009.013;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ECUSecurityShutdownExpected;0010.043102.010.010.0;ECU Security Shutdown Expected;110321;1012;20;2;Bool;1;0;;2.8009.011;;;;;1;-;350487;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustCombinedC;0010.006401.010.030.0;T-Exhaust Combined C;110335;1013;9;2;degC;100;0;;1.0133.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_ExhaustCombinedC;0010.006401.154.030.0;LM HI T-Exhaust Combined C;110336;1013;10;2;degC;100;0;;1.0133.017;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_ExhaustCombinedC;0010.006401.164.030.0;LM HIHI T-Exhaust Combined C;110337;1013;11;2;degC;100;0;;1.0133.018;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustCombinedD;0010.006401.010.040.0;T-Exhaust Combined D;110340;1013;14;2;degC;100;0;;1.0134.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_ExhaustCombinedD;0010.006401.154.040.0;LM HI T-Exhaust Combined D;110341;1013;15;2;degC;100;0;;1.0134.017;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_ExhaustCombinedD;0010.006401.164.040.0;LM HIHI T-Exhaust Combined D;110342;1013;16;2;degC;100;0;;1.0134.018;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LubeOilLevel;0010.025301.010.000.0;Lube Oil Level;110348;1013;22;2;Bool;1;0;;1.0150.122;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LubeOilLevelStatus;0010.025302.010.000.0;Lube Oil Level Status;110366;1014;15;2;digit;1;0;;1.0158.204;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LubeOilLevelnotcal;0010.025301.010.010.0;Lube Oil Level (not cal.);110367;1014;16;2;mm;1000;0;;1.0158.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LubeOilLevelcal;0010.025303.010.000.0;Lube Oil Level (cal.);110372;1014;21;2;mm;1000;0;;1.0158.201;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;AlarmProtocolLightCarrier;0010.078004.010.000.0;Alarm Protocol Light Carrier;110375;1014;24;2;digit;1;ALPLight375;;---;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_T_ExhaustL2abovebelowECU;0010.006206.205.020.0;AL T-Exhaust L2 above/below;110389;1015;13;2;Bool;1;FB1Alarm;;;;;ED1_20(BL120);EIM Refitbox ECU4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_ETC3Speed;0010.056001.154.030.0;LM HI ETC 3 Speed;110393;1015;17;2;krpm;10000;0;;"1.3010.018
+1.5100.266 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_ETC3Speed;0010.056001.164.030.0;LM HIHI ETC 3 Speed;110394;1015;18;2;krpm;10000;0;;"1.3010.023
+1.5100.276 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_ETC4Speed;0010.056001.154.040.0;LM HI ETC 4 Speed;110395;1015;19;2;krpm;10000;0;;"1.3010.017
+1.5100.286 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_ETC4Speed;0010.056001.164.040.0;LM HIHI ETC 4 Speed;110396;1015;20;2;krpm;10000;0;;"1.3010.022
+1.5100.296 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_CoolantIntercooler;0010.015202.164.000.0;LM HIHI T-Coolant Intercooler;110397;1015;21;2;degC;100;0;;"1.0124.018
+1.5100.836 ECU9_2.4";;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;RequestedTorque;0010.002005.010.000.0;Requested Torque;110409;1016;8;2;Nm;10;0;;2.1000.049;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;MCR_Momentkorr;0010.002006.010.000.0;MCR-Moment korr.;110420;1016;19;2;Nm;10;0;;1.1075.056;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;TorqueLimitationCode;0010.002011.010.000.0;Torque Limitation Code;110424;1016;23;2;digit;1;0;;1.1075.065;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;StateBinaryInputOutputs;0010.057305.010.000.0;State Binary Input/Outputs;110430;1017;4;2;digit;1;0;;2.9902.100;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_FuelCommonRailB;0010.020103.010.020.0;P-Fuel Common Rail  B;110431;1017;5;2;bar;100000;0;;2.2010.116;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;InjectioninReltoDBR50ms;0010.002002.010.010.0;Injection in Rel.to DBR (50ms);110436;1017;10;2;%;1000;0;;1.1020.203;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;PowerinRelationtoMCR;0010.002504.010.000.0;Power in Relation to MCR;110438;1017;12;2;%;1000;0;;1.1088.003;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;MCROverloadDuration;0010.002505.010.000.0;MCR Overload Duration;110440;1017;14;2;s;1000;0;;1.1088.004;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ActualDBRTorque;0010.002007.010.000.0;Actual DBR Torque;110450;1017;24;2;Nm;10;0;;---;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SpecificFuelConsumption;0010.020406.010.000.0;Specific Fuel Consumption;110452;1018;1;2;g/kWh;1000;0;;1.1200.504;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ActualEnginePower;0010.002501.010.000.0;Actual Engine Power;110453;1018;2;2;kW;1000;0;;1.1005.012;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;DBRMCRReductionactive;0010.002008.010.000.0;DBR/MCR Reduction active;110454;1018;3;2;digit;1;0;;2.2010.115;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ActualTorque;0010.002009.010.000.0;Actual Torque (%);110460;1018;9;2;%;1000;0;;2.1075.012;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;MaxEnginePower;0010.002503.010.000.0;Max. Engine Power;110461;1018;10;2;kW;1000;0;;1.1005.029;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ActualIdleSpeed;0010.000503.010.010.0;Actual Idle Speed;110462;1018;11;2;rpm;10;0;;1.1100.516;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SpeedDemandwithoutP_Grade;0010.000604.010.050.0;Speed Demand without P-Grade;110463;1018;12;2;rpm;10;0;;1.1600.736;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_FuelPrefilterDiff;0010.020106.010.000.0;P-Fuel Prefilter Diff.;110465;1018;14;2;bar;100000;0;;1.0119.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_FuelPrefilterDiff;0010.020106.154.000.0;LM HI P-Fuel Prefilter Diff.;110466;1018;15;2;bar;100000;0;;"1.0119.017
+1.5100.506 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_LubeOilBSideETCs;0010.025104.010.020.0;P-Lube Oil B-Side ETCs;110504;1020;3;2;bar;100000;0;;1.0223.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_LubeOilBSideETCs;0010.025104.104.020.0;LM LO P-Lube Oil B-Side ETCs;110505;1020;4;2;bar;100000;0;;"1.0223.015
+1.5100.966 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_P_LubeOilBSideETCs;0010.025104.114.020.0;LM LOLO P-Lube Oil B-Side ETCs;110506;1020;5;2;bar;100000;0;;"1.0223.016
+1.5100.976 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ThermomanagmentState;0010.057600.010.000.0;ThermomanagmentState;110515;1020;14;2;digit;1;0;;1.1602.198;TM Status;;ED1_17 (GLNG_BL30);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ThermomanagmentRequest;0010.057601.010.000.0;ThermomanagmentRequest;110526;1021;0;2;digit;1;0;;1.1602.094;Anforderung Regeneration;;ED1_17 (GLNG_BL30);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_LubeOilASideETCs;0010.025104.010.010.0;P-Lube Oil A-Side ETCs;110529;1021;3;2;bar;100000;0;;1.0222.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_LubeOilASideETCs;0010.025104.104.010.0;LM LO P-Lube Oil A-Side ETCs;110530;1021;4;2;bar;100000;0;;"1.0222.015
+1.5100.946 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_P_LubeOilASideETCs;0010.025104.114.010.0;LM LOLO P-Lube Oil A-Side ETCs;110531;1021;5;2;bar;100000;0;;"1.0222.016
+1.5100.956 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_IntakeAirB;0010.005101.010.020.0;P-Intake Air B;110565;1022;14;2;mbar;100;0;;1.0187.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_IntakeAirB;0010.005101.104.020.0;LM LO P-Intake Air B;110573;1022;22;2;mbar;100;0;;"1.0187.015
+1.5100.066 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_LubeOilAfterLevelPump;0010.025105.010.000.0;P-Lube Oil After Level Pump;110576;1023;0;2;bar;100000;0;;1.0219.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_LubeOilAftLevPump;0010.025105.104.000.0;LM LO P-Lune Oil Aft Lev Pump;110577;1023;1;2;bar;100000;0;;"1.0219.015
+1.5100.916 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_FuelRailB;0010.020201.010.020.0;T-Fuel Rail B;110584;1023;8;2;degC;100;0;;1.0215.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LevelOilRefillTank;0010.025304.010.000.0;Level Oil Refill Tank;110586;1023;10;2;digit;1;0;;1.0216.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_RawWaterAfterPump;0010.016201.010.000.0;T-Raw Water After Pump;110588;1023;12;2;degC;100;0;;1.0214.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_FuelBeforeLPPump;0010.020202.010.000.0;T-Fuel Before LP Pump;110590;1023;14;2;degC;100;0;;1.0080.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_P_ChargeAirB;0010.008101.164.020.0;;110593;1023;17;2;bar;100000;0;;;;;;Ed1.17: Fehlte in der Spez.;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_LubeOilETC;0010.025203.010.000.0;T-Lube Oil ETC;110601;1024;0;2;degC;100;0;;1.0224.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_LubeOilETC;0010.025203.154.000.0;LM HI T-Lube Oil ETC;110602;1024;1;2;degC;100;0;;"1.0224.017
+1.5101.006 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_LubeOilETC;0010.025203.164.000.0;LM HIHI T-Lube Oil ETC;110603;1024;2;2;degC;100;0;;"1.0224.018
+1.5101.016 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_P_LubeOilFilterDiff;0010.025103.164.000.0;LM HIHI P-Lube Oil Filter Diff.;110606;1024;5;2;bar;100000;0;;"1.0154.018
+1.5100.886 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;Cmd_ETC5CutIn;0010.056002.013.050.0;Cmd ETC 5 Cut In;110609;1024;8;2;Bool;1;0;;1.3010.013;;;;not used in Geno;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_RawWaterAfterPump;0010.016201.154.000.0;LM HI T-Raw Water After Pump;110610;1024;9;2;degC;100;0;;"1.0214.017
+1.5100.866 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_FuelRailB;0010.020201.154.020.0;LM HI T-Fuel Rail B;110612;1024;11;2;degC;100;0;;"1.0215.017
+1.5100.616 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_IntakeAir;0010.005201.164.000.0;LM HIHI T-Intake Air;110613;1024;12;2;degC;100;0;;"1.0123.018
+1.5100.136 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_FuelBeforeLPPump;0010.020202.154.000.0;LM HI T-Fuel Before LP Pump;110614;1024;13;2;degC;100;0;;"1.0080.017
+1.5100.576 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_FuelBeforeLPPump;0010.020202.164.000.0;LM HIHI T-Fuel Before LP Pump;110615;1024;14;2;degC;100;0;;"1.0080.018
+1.5100.586 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustAfterEngine;0010.006402.010.010.0;T-Exhaust after LP ETC;110618;1024;17;2;degC;100;0;;1.0213.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_ExhaustAfterEngine;0010.006402.154.010.0;LM HI T-Exhaust after LP ETC;110619;1024;18;2;degC;100;0;;"1.0213.017
+1.5100.466 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_ExhaustAfterEngine;0010.006402.164.010.0;LM HIHI T-Exhaust after LP ETC;110624;1024;23;2;degC;100;0;;"1.0213.018
+1.5100.476 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_FuelRailB;0010.020201.164.020.0;LM HIHI T-Fuel Rail B;110625;1024;24;2;degC;100;0;;"1.0215.018
+1.5100.626 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EngineStopped;0010.042101.010.000.0;EngineStopped;110629;1025;3;2;Bool;1;0;;2.2010.125;;;;;1;-;376851;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_IntakeAirAfterFilter;0010.005102.010.000.0;P-Intake Air After Filter;110635;1025;9;2;mbar;100;0;;1.0186.001;;;;;1;-;398703;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;FB_CapsizeSwitchActivated;0050.072001.010.000.0;FB Capsize Function Active;110636;1025;10;2;Bool;1;0;;2.1611.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_IntakeAirAfterFilter;0010.005102.104.000.0;LM LO P-Intake Air After Filter;110642;1025;16;2;mbar;100;0;;"1.0186.015
+1.5100.626 ECU9_2.6";;;;;1;-;398703;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_P_ChargeAir;0010.008101.164.000.0;LM HIHI P-Charge Air;110646;1025;20;2;bar;100000;0;;"1.0103.016
+1.5100.096 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;MMS_ReadyforSystemSwitchOff;0010.075000.010.000.0;Ready for System Switch-off;110648;1025;22;2;digit;1;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;EGAT_Configuration1;0010.080004.010.010.0;EGAT Configuration 1;110651;1026;0;2;digit;1;0;;1.1750.851;;;;GreenOcean;1;439386;451252;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EGAT_Configuration2;0010.080004.010.020.0;EGAT Configuration 2;110652;1026;1;2;digit;1;0;;1.1750.852;;;;GreenOcean;1;439390;451253;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EGAT_Configuration3;0010.080004.010.030.0;EGAT Configuration 3;110653;1026;2;2;digit;1;0;;1.1750.853;;;;GreenOcean;1;439392;451254;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustSCRInlet1;0012.006200.010.000.0;T-Exhaust SCR Inlet 1;110654;1026;3;2;degC;100;0;;1.0204.001;;;;GreenOcean;1;404373;451161;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustSCRInlet2;0012.006200.010.010.0;T-Exhaust SCR Inlet 2;110655;1026;4;2;degC;100;0;;1.0204.101;;;;GreenOcean;1;404374;451162;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustSCROutlet1;0012.006201.010.000.0;T-Exhaust SCR Outlet 1;110656;1026;5;2;degC;100;0;;1.0204.301;;;;GreenOcean;1;404375;451163;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_ExhaustSCR;0012.006200.154.000.0;LM HI T-Exhaust SCR;110657;1026;6;2;degC;100;0;;"1.0204.615
+1.5101.206 ECU9_2.6
+1.5102.086 ECU9_2.8";;;;GreenOcean;1;419635, 419641, 419645;451195, 451197, 451199;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_ExhaustSCR;0012.006200.164.000.0;LM HIHI T-Exhaust SCR;110658;1026;7;2;degC;100;0;;"1.0204.616
+1.5101.216 ECU9_2.6
+1.5102.096 ECU9_2.8";;;;GreenOcean;1;419639, 419643, 419647;451196, 451198, 451200;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_ExhaustDiffSCR1;0012.006500.154.000.0;LM HI P-Exhaust Diff SCR;110659;1026;8;2;bar;100000;0;;1.0238.015;;;;GreenOcean;1;419691;451217;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_P_ExhaustDiffSCR1;0012.006500.164.000.0;LM HIHI P-Exhaust Diff SCR;110660;1026;9;2;bar;100000;0;;1.0238.016;;;;GreenOcean;1;419697;451218;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_ExhaustDiffSCR1;0012.006500.010.000.0;P-Exhaust Diff SCR 1;110661;1026;10;2;bar;100000;0;;1.0238.101;;;;GreenOcean;1;404376;451164;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_RAatPFM;0012.024100.154.000.0;LM HI T-RA at PFM;110662;1026;11;2;degC;100;0;;1.1752.104;;;;GreenOcean;1;419663;451207;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_T_RAatPFM;0012.024100.104.000.0;LM LO T-RA at PFM;110663;1026;12;2;degC;100;0;;1.1752.114;;;;GreenOcean;1;419665;451208;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;RA_Dosing_Approval;0012.024400.010.000.0;RA Dosing Approval;110664;1026;13;2;digit;1;0;;1.1702.381;;;;GreenOcean. Enfällt mit ECU 2.11 BT #14448;1;413344;451181;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_RAatPFM;0012.024100.010.000.0;T-Reducing Agent at PFM;110665;1026;14;2;degC;100;0;;1.1752.001;;;;GreenOcean;1;404380;451166;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_RAFilterOutAtPFM;0012.024200.010.000.0;P-RA Filter Out at PFM;110666;1026;15;2;bar;100000;0;;1.1752.003;;;;GreenOcean;1;404378;451165;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_RAFilterOutAtPFM;0012.024200.104.000.0;LM LO P-RA Filter Out at PFM;110667;1026;16;2;bar;100000;0;;1.1752.115;;;;GreenOcean;1;419669;451210;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_RawWaterECU;0010.016101.010.010.0;P-Raw Water;110668;1026;17;2;bar;100000;0;;1.0249.001;;;ED1_11 (BL70);R70;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_RawWaterECU;0010.016101.104.010.0;LM LO P-Raw Water;110669;1026;18;2;bar;100000;0;;1.5101.836;;;ED1_11 (BL70);R70;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_P_RawWaterECU;0010.016101.114.010.0;LM LOLO P-Raw Water;110670;1026;19;2;bar;100000;0;;1.5101.846;;;ED1_11 (BL70);R70;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_ExhaustDiffSCR2;0012.006500.010.010.0;P-Exhaust Diff. SCR 2;110671;1026;20;2;bar;100000;0;;;;;ED1_15 (BL90);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_ExhaustDiffSCR2;0012.006500.154.010.0;LM HI P-Exhaust Diff SCR 2;110672;1026;21;2;bar;100000;0;;;;;ED1_15 (BL90);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_P_ExhaustDiffSCR2;0012.006500.164.010.0;LM HIHI P-Exhaust Diff SCR 2;110673;1026;22;2;bar;100000;0;;;;;ED1_15 (BL90);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_RADoser1;0012.024407.010.000.0;P-DEF DEF Doser 1;110676;1027;0;2;bar;100000;0;;;;;ED1_17 (GLNG_BL30);#12902;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_RADoser2;0012.024408.010.000.0;P-DEF DEF Doser 2;110677;1027;1;2;bar;100000;0;;;;;ED1_17 (GLNG_BL30);#12902;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_RADoser3;0012.024409.010.000.0;P-DEF DEF Doser 3;110678;1027;2;2;bar;100000;0;;;;;ED1_17 (GLNG_BL30);#12902;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_RADoser4;0012.024410.010.000.0;P-DEF DEF Doser 4;110679;1027;3;2;bar;100000;0;;;;;ED1_17 (GLNG_BL30);#12902;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_RADoser5;0012.024411.010.000.0;P-DEF DEF Doser 5;110680;1027;4;2;bar;100000;0;;;;;ED1_17 (GLNG_BL30);#12902;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_RADoser6;0012.024412.010.000.0;P-DEF DEF Doser 6;110681;1027;5;2;bar;100000;0;;;;;ED1_17 (GLNG_BL30);#12902;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ActualRAConsumption_ECU;0012.024427.010.010.0;Actual RA Consumption;110682;1027;6;2;l/h;1000;0;;;;;ED1_15 (BL90);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;TotalRAConsumption;0012.024429.010.000.0;Total RA Consumption;110683;1027;7;2;l;10;0;;;;;ED1_18 (BVNG BL100);#15260;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;TripRAConsumption;0012.024428.010.000.0;Trip RA Consumption;110684;1027;8;2;l;10;0;;;;;ED1_18 (BVNG BL100);#15260;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EGAT_HAPS_Bypass_Position;0012.058604.010.000.0;EGAT HAPS Bypass Position;110685;1027;9;2;digit;1;0;;;;;ED1_17 (GLNG_BL30);#12902;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_ExhaustSCRInlet1;0012.006502.010.000.0;P-Exhaust SCR Inlet 1;110695;1027;19;2;bar;100000;0;;;;;ED1_15 (BL90);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_ExhaustSCRInlet1;0012.006502.154.000.0;LM HI P-Exhaust SCR Inlet 1;110696;1027;20;2;bar;100000;0;;;;;ED1_15 (BL90);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_P_ExhaustSCRInlet1;0012.006502.164.000.0;LM HIHI P-Exhaust SCR Inlet 1;110697;1027;21;2;bar;100000;0;;;;;ED1_15 (BL90);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_ExhaustSCRInlet2;0012.006502.010.010.0;P-Exhaust SCR Inlet 2;110698;1027;22;2;bar;100000;0;;;;;ED1_15 (BL90);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_ExhaustSCRInlet2;0012.006502.154.010.0;LM HI P-Exhaust SCR Inlet 2;110699;1027;23;2;bar;100000;0;;;;;ED1_15 (BL90);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_P_ExhaustSCRInlet2;0012.006502.164.010.0;LM HIHI P-Exhaust SCR Inlet 2;110700;1027;24;2;bar;100000;0;;;;;ED1_15 (BL90);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;FB_EGAT_Bypass_PositionClosedReachedECU;0012.058600.010.000.0;FB EGAT Bypass Position Closed Reached ECU;110701;1028;0;2;Bool;1;0;;1.1756.301;B_EGAT_Bypass_Closed;;ED1_20 (BL120);#15948: GO Navy - ECU9+HUG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;FB_EGAT_Bypass_PositionOpenReachedECU;0012.058600.010.010.0;FB EGAT Bypass Position Open Reached ECU;110702;1028;1;2;Bool;1;0;;1.1756.302;B_EGAT_Bypass_Opened;;ED1_20 (BL120);#15948: GO Navy - ECU9+HUG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;FB_EGAT_BypassTestActiveECU;0012.058601.010.000.0;FB EGAT Bypass Test Active ECU;110703;1028;2;2;Bool;1;0;;1.1756.401;B_EGAT_EmergByp_test_in_progress;;ED1_20 (BL120);#15948: GO Navy - ECU9+HUG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;EGAT_BypassHandwheelEngageECU;0012.058602.010.000.0;EGAT Bypass Handwheel Engage ECU;110704;1028;3;2;Bool;1;0;;1.1756.402;B_EGAT_EmergBypHandWheel_Engaged;;ED1_20 (BL120);#15948: GO Navy - ECU9+HUG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;EGAT_Bypass_PositionECU;0012.058603.010.000.0;EGAT Bypass Position ECU;110705;1028;4;2;digit;1;0;;1.9920.043;EGAT_EmergByp_Position;;ED1_20 (BL120);#15948: GO Navy - ECU9+HUG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustSCROutlet2;0012.006201.010.010.0;T-Exhaust SCR Outlet 2;110706;1028;5;2;degC;100;0;;1.0204.401;;;ED1_13 (BL80);R80/R10;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EGAT_SystemState_MMS;0012.089000.010.000.0;EGAT_SystemState_MMS;110709;1028;8;2;digit;1;0;;;;;ED1_15 (BL90);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;RA_Concentration;0012.024424.010.000.0;RA_Concentration;110710;1028;9;2;%;1000;0;;;;;ED1_15 (BL90);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_RA_Concentration;0012.024424.104.000.0;LM_LO_RA_Concentration;110711;1028;10;2;%;1000;0;;;;;ED1_15 (BL90);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_RA_Concentration;0012.024424.154.000.0;LM_HI_RA_Concentration;110712;1028;11;2;%;1000;0;;;;;ED1_15 (BL90);#14269/#14273;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_RA_Concentration;0012.024424.114.000.0;LM_LOLO_RA_Concentration;110713;1028;12;2;%;1000;0;;;;;ED1_15 (BL90);#14269/#14273;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_RA_Concentration;0012.024424.164.000.0;LM_HIHI_RA_Concentration;110714;1028;13;2;%;1000;0;;;;;ED1_15 (BL90);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_FuelReturnPath;0010.020107.154.000.0;;110715;1028;14;2;bar;100000;0;;;LM HI P-Fuel Return;;ED1_17 (GLNG_BL30);"#13158 
+MMS_CR_504923";1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_P_FuelReturnPath;0010.020107.164.000.0;;110716;1028;15;2;bar;100000;0;;;LM HIHI P-Fuel Return;;ED1_17 (GLNG_BL30);#13158 ;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_Coolant;0010.015101.154.010.0;;110717;1028;16;2;bar;100000;0;;;LM HI P-Coolant;;ED1_17 (GLNG_BL30);#13158 ;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_P_Coolant;0010.015101.164.000.0;;110718;1028;17;2;bar;100000;0;;;LM HIHI P-Coolant;;ED1_17 (GLNG_BL30);#13158 ;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_FuelReturnPath;0010.020107.010.000.0;;110719;1028;18;2;bar;100000;0;;;P-Fuel Return;;ED1_17 (GLNG_BL30);#13158 ;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_RAFilterOutAtPFM;0012.024200.154.000.0;;110720;1028;19;2;bar;100000;0;;;LM HI P-DEF Filter Out at PDM;;ED1_17 (GLNG_BL30);#13419;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_RATankLevelECU;0050.024300.104.020.0;;110723;1028;22;2;%;1000;0;;1.1751.031;Level_RA_RA_tank_MonLim_LO;;ED1_17 (GLNG_BL30);#14458;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_AL_RATankEmptyECU;0050.024300.204.020.0;;110724;1028;23;2;%;1000;0;;1.1751.032;Level_RA_RA_tank_MonLim_Empty;;ED1_17 (GLNG_BL30);#14458;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC_RegenMinTemperatueECU;0012.089203.012.340.0;;110725;1028;24;2;degC;100;0;;1.4460.001;T_HcLoadStatus_Rgn_Threshold;;ED1_17 (GLNG_BL30);#14347;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC_DepositionLevelECU;0012.089203.010.090.0;;110726;1029;0;2;%;1000;0;;1.4452.001;Level_HcLoadStatus;;ED1_17 (GLNG_BL30);#14347;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC_RemainTimeBefRegenECU;0012.089212.014.000.0;;110727;1029;1;2;min;1;0;;1.4452.002;t_HcLowLoad_Remain_forecast;;ED1_17 (GLNG_BL30);#14347;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC_MinimumTimeBefRegenECU;0012.089213.014.000.0;;110728;1029;2;2;min;1;0;;1.4452.003;t_HcLowLoad_Remain_minimal;;ED1_17 (GLNG_BL30);#14347;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC_ExpectedRegenTimeECU;0012.089203.012.380.0;;110729;1029;3;2;min;1;0;;1.4452.004;t_HcRgnFinished_Remain;;ED1_17 (GLNG_BL30);#14347;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC_DepositionStateECU;0012.089203.010.100.0;;110730;1029;4;2;digit;1;0;;1.4452.005;En_HcLoadStatus;;ED1_17 (GLNG_BL30);#14347;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_Exhaust_SCRHCLoad_ECU;0012.006200.010.001.0;;110731;1029;5;2;degC;100;0;;1.4452.006;T_HcLoadStatus;;ED1_17 (GLNG_BL30);#14347;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHIHI_T_ExhaustSCRECU;0012.006200.174.000.0;;110732;1029;6;2;degC;100;0;;1.5102.886;MonLim_T_Exh_SCRsys_inl_F1_Hi3;;ED1_17 (GLNG_BL30);#12902;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_CoolantIntercooler;0010.015104.154.000.0;LM HI P-Coolant Intercooler;110733;1029;7;2;bar;100000;0;;;MonLim_p_Coolant_Intercooler_HI1;;ED1_17 (GLNG_BL30);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_P_CoolantIntercooler;0010.015104.164.000.0;LM HIHI P-Coolant Intercooler;110734;1029;8;2;bar;100000;0;;;MonLim_p_Coolant_Intercooler_HI2;;ED1_17 (GLNG_BL30);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_SCR_HC1_DepositionECU;0012.089203.154.000.0;LM HI SCR HC1 Deposition ECU;110735;1029;9;2;%;1000;0;;1.4460.002;Level_HI1_HcLoadStatus;;ED1_17 (GLNG_BL30);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_SCR_HC1_DepositionECU;0012.089203.164.000.0;LM HIHI SCR HC1 Deposition ECU;110736;1029;10;2;%;1000;0;;1.4460.003;Level_HI2_HcLoadStatus;;ED1_17 (GLNG_BL30);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_SCR_HC1_RegenerationECU;0012.089203.234.000.0;LM SCR HC1 Regeneration ECU;110737;1029;11;2;%;1000;0;;1.4460.004;Level_Notice_HcLoadStatus;;ED1_17 (GLNG_BL30);;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;Cmd_RequestLocalMode;0010.040201.013.000.0;Cmd Request Local Mode;110806;1172;7;31;Bool;1;0;;10.0910.806;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ETC5Speed;0010.056001.010.050.0;ETC 5 Speed;110910;1082;5;3;krpm;10000;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EngineSpeedSaSy;0011.000501.010.000.0;Engine Speed SaSy;112002;1092;24;3;rpm;10;0;;"1.2500.044
+2.2010.123 
+ECU7 AIO 1.5";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_EngineOverspeedSaSy;0011.000501.165.000.0;HIHI Engine Overspeed SaSy;112003;1105;0;3;digit;1;FB1Alarm;6030?;2.2510.912;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_LubeOilSaSy;0011.025101.010.000.0;P-Lube Oil SaSy;112026;1105;3;3;bar;100000;0;;1.0100.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_LubeOilSaSy;0011.025101.104.000.0;LM LO P-Lube Oil SaSy;112027;1105;4;3;bar;100000;0;;"1.0100.015
+1.5100.896 
+ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_P_LubeOilSaSy;0011.025101.114.000.0;LM LOLO P-Lube Oil SaSy;112028;1105;5;3;bar;100000;0;;"1.0100.016
+1.5100.906 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_P_LubeOilSaSy;0011.025101.105.000.0;LO P-Lube Oil SaSy;112029;1105;6;3;digit;1;FB1Alarm;6243;2.0100.901;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LOLO_P_LubeOilSaSy;0011.025101.115.000.0;LOLO P-Lube Oil SaSy;112030;1105;7;3;digit;1;FB1Alarm;6244;2.0100.902;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EngineRunningSaSy;0011.000505.010.000.0;Engine Running SaSy;112068;1105;8;3;Bool;1;0;;2.2010.105;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_CrankcaseSaSy;0011.009101.010.000.0;P-Crank case SaSy;112077;1082;9;3;mbar;100;0;;2.1051.002;;;;;1;-;398703;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_CrankcaseSaSy;0011.009101.154.000.0;LM HI P-Crankcase SaSy;112078;1082;10;3;mbar;100;0;;2.2010.101;;;;;1;-;398703;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_P_CrankcaseSaSy;0011.009101.164.000.0;LM HIHI P-Crankcase SaSy;112079;1082;11;3;mbar;100;0;;;;;;;1;-;398703;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EMU_Failure_Codes;0010.078012.010.000.0;EMU Failur Code;112087;1082;12;3;digit;1;0;;;;;;;1;-;398703;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_EMU;0010.068300.010.000.0;T-EMU;112088;1082;13;3;degC;100;0;;;;;;;1;-;398703;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;PowerSupplyEMU;0010.050300.010.000.0;Power Supply EMU;112089;1082;14;3;V;1000;0;;2.1090.060;;;;;1;-;398703;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;InfoTextEMU;0010.075701.010.000.0;InfoTextSaSy;112112;1082;8;3;digit;1;InfoText;;     2.0123.901;;;;InfoTextEMU;1;-;383280;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_CoolantSaSy;0011.015201.010.000.0;T-Coolant SaSy;112126;1105;10;3;degC;100;0;;1.0120.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_CoolantSaSy;0011.015201.154.000.0;LM HI T-Coolant SaSy;112127;1105;11;3;degC;100;0;;"1.0120.017
+1.5100.766 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_CoolantSaSy;0011.015201.164.000.0;LM HIHI T-Coolant SaSy;112128;1105;12;3;degC;100;0;;"1.0120.018
+1.5100.776 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_CoolantSaSy;0011.015201.155.000.0;HI T-Coolant SaSy;112129;1105;13;3;digit;1;FB1Alarm;6239;2.0120.911;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_CoolantSaSy;0011.015201.165.000.0;HIHI T-Coolant SaSy;112130;1105;14;3;digit;1;FB1Alarm;6240;2.0120.912;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_EngineSpeedSaSy;0011.000501.164.000.0;LM HIHI Engine Speed SaSy;112162;1091;15;3;rpm;10;0;;1.2510.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_WB_EmergStopSaSy;0011.043301.255.000.0;WB SaSy Emergency Stop Output;112181;1091;19;3;digit;1;FB1Alarm;;          ;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_SC_EmergStopSaSy;0011.043302.265.000.0;SC SaSy Emergency Stop Output;112191;1104;4;3;digit;1;FB1Alarm;6033?;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustA1;0010.006201.010.010.0;T-Exhaust A1;112201;1104;8;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustA2;0010.006201.010.020.0;T-Exhaust A2;112202;1104;9;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustA3;0010.006201.010.030.0;T-Exhaust A3;112203;1104;10;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustA4;0010.006201.010.040.0;T-Exhaust A4;112204;1104;11;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustA5;0010.006201.010.050.0;T-Exhaust A5;112205;1104;12;3;degC;100;0;;2.1060.200;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustA6;0010.006201.010.060.0;T-Exhaust A6;112206;1104;13;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustA7;0010.006201.010.070.0;T-Exhaust A7;112207;1104;14;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustA8;0010.006201.010.080.0;T-Exhaust A8;112208;1090;15;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustA9;0010.006201.010.090.0;T-Exhaust A9;112209;1090;16;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustA10;0010.006201.010.100.0;T-Exhaust A10;112210;1090;17;3;degC;100;0;;2.0120.913;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustB1;0010.006202.010.010.0;T-Exhaust B1;112211;1090;18;3;degC;100;0;;2.0120.914;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustB2;0010.006202.010.020.0;T-Exhaust B2;112212;1090;19;3;degC;100;0;;2.2010.002;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustB3;0010.006202.010.030.0;T-Exhaust B3;112213;1090;20;3;degC;100;0;;2.7001.010;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustB4;0010.006202.010.040.0;T-Exhaust B4;112214;1090;21;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustB5;0010.006202.010.050.0;T-Exhaust B5;112215;1090;22;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustB6;0010.006202.010.060.0;T-Exhaust B6;112216;1090;23;3;degC;100;0;;1.1020.202;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustB7;0010.006202.010.070.0;T-Exhaust B7;112217;1090;24;3;degC;100;0;;1.3010.012;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustB8;0010.006202.010.080.0;T-Exhaust B8;112218;1103;0;3;degC;100;0;;1.0113.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustB9;0010.006202.010.090.0;T-Exhaust B9;112219;1103;1;3;degC;100;0;;1.1005.021;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustB10;0010.006202.010.100.0;T-Exhaust B10;112220;1103;2;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustMean;0010.006203.010.000.0;T-Exhaust Mean;112221;1103;3;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustMax;0010.006204.010.000.0;T-Exhaust Max;112222;1103;4;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustMin;0010.006205.010.000.0;T-Exhaust Min;112223;1103;5;3;degC;100;0;;2.2700.060;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_Exhaust;0010.006201.154.010.0;LM HI T-Exhaust;112224;1103;6;3;degC;100;0;;1.0156.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_T_Exhaust;0010.006201.104.010.0;LM LO T-Exhaust;112225;1103;7;3;degC;100;0;;2.2010.110;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_Exhaust;0010.006201.164.010.0;LM HIHI T-Exhaust;112226;1103;8;3;degC;100;0;;2.8009.022;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_T_Exhaust;0010.006201.114.010.0;LM LOLO T-Exhaust;112227;1103;9;3;degC;100;0;;2.0500.202;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustMeanFailure;0010.006208.010.000.0;T-Exhaust Mean Failure;112237;1103;12;3;Bool;1;0;;2.1090.900;;;;;1;-;383290;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_Bearing1;0010.055201.010.010.0;T-Bearing 1;112251;1103;13;3;degC;100;0;;          ;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_Bearing2;0010.055201.010.020.0;T-Bearing 2;112252;1103;14;3;degC;100;0;;          ;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_Bearing3;0010.055201.010.030.0;T-Bearing 3;112253;1089;15;3;degC;100;0;;          ;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_Bearing4;0010.055201.010.040.0;T-Bearing 4;112254;1089;16;3;degC;100;0;;          ;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_Bearing5;0010.055201.010.050.0;T-Bearing 5;112255;1089;17;3;degC;100;0;;1.8009.027;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_Bearing6;0010.055201.010.060.0;T-Bearing 6;112256;1089;18;3;degC;100;0;;2.7003.015;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_Bearing7;0010.055201.010.070.0;T-Bearing 7;112257;1089;19;3;degC;100;0;;2.7000.010;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_Bearing8;0010.055201.010.080.0;T-Bearing 8;112258;1089;20;3;degC;100;0;;1.0128.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_Bearing9;0010.055201.010.090.0;T-Bearing 9;112259;1089;21;3;degC;100;0;;1.0128.017;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_Bearing10;0010.055201.010.100.0;T-Bearing 10;112260;1089;22;3;degC;100;0;;1.0128.018;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_Bearing11;0010.055201.010.110.0;T-Bearing 11;112261;1089;23;3;degC;100;0;;"1.0126.018
+1.5100.376 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_BearingMean;0010.055202.010.000.0;T-Bearing Mean;112270;1089;24;3;degC;100;0;;2.0140.902;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_BearingMean;0010.055202.154.000.0;LM HI T-Bearing Mean;112271;1102;0;3;degC;100;0;;2.0140.912;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_BearingMean;0010.055202.155.000.0;HI T-Bearing Mean;112272;1102;1;3;digit;1;FB1Alarm;6233;          ;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_Bearing;0010.055201.154.010.0;LM HI T-Bearing;112274;1102;3;3;degC;100;0;;          ;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_Bearing;0010.055201.164.010.0;LM HIHI T-Bearing;112275;1102;4;3;degC;100;0;;          ;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_BearingMeanFailure;0010.055203.010.000.0;T-Bearing Mean Failure;112277;1102;6;3;Bool;1;0;;          ;;;;;1;-;383292;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustA1;0010.006201.155.010.0;HI T-Exhaust A1;112301;1102;7;3;digit;1;FB1Alarm;6140;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustA2;0010.006201.155.020.0;HI T-Exhaust A2;112302;1102;8;3;digit;1;FB1Alarm;6141;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustA3;0010.006201.155.030.0;HI T-Exhaust A3;112303;1102;9;3;digit;1;FB1Alarm;6142;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustA4;0010.006201.155.040.0;HI T-Exhaust A4;112304;1102;10;3;digit;1;FB1Alarm;6143;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustA5;0010.006201.155.050.0;HI T-Exhaust A5;112305;1102;11;3;digit;1;FB1Alarm;6144;1.1020.506;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustA6;0010.006201.155.060.0;HI T-Exhaust A6;112306;1102;12;3;digit;1;FB1Alarm;6145;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustA7;0010.006201.155.070.0;HI T-Exhaust A7;112307;1102;13;3;digit;1;FB1Alarm;6146;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustA8;0010.006201.155.080.0;HI T-Exhaust A8;112308;1102;14;3;digit;1;FB1Alarm;6147;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustA9;0010.006201.155.090.0;HI T-Exhaust A9;112309;1088;15;3;digit;1;FB1Alarm;6148;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustA10;0010.006201.155.100.0;HI T-Exhaust A10;112310;1088;16;3;digit;1;FB1Alarm;6149;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustB1;0010.006202.155.010.0;HI T-Exhaust B1;112311;1088;17;3;digit;1;FB1Alarm;6150;2.2010.120;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustB2;0010.006202.155.020.0;HI T-Exhaust B2;112312;1088;18;3;digit;1;FB1Alarm;6151;2.2010.121;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustB3;0010.006202.155.030.0;HI T-Exhaust B3;112313;1088;19;3;digit;1;FB1Alarm;6152;2.1061.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustB4;0010.006202.155.040.0;HI T-Exhaust B4;112314;1088;20;3;digit;1;FB1Alarm;6153;2.1061.002;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustB5;0010.006202.155.050.0;HI T-Exhaust B5;112315;1088;21;3;digit;1;FB1Alarm;6154;2.2700.064;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustB6;0010.006202.155.060.0;HI T-Exhaust B6;112316;1088;22;3;digit;1;FB1Alarm;6155;1.8009.005;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustB7;0010.006202.155.070.0;HI T-Exhaust B7;112317;1088;23;3;digit;1;FB1Alarm;6156;2.7010.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustB8;0010.006202.155.080.0;HI T-Exhaust B8;112318;1088;24;3;digit;1;FB1Alarm;6157;1.3010.006;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustB9;0010.006202.155.090.0;HI T-Exhaust B9;112319;1101;0;3;digit;1;FB1Alarm;6158;1.3010.007;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustB10;0010.006202.155.100.0;HI T-Exhaust B10;112320;1101;1;3;digit;1;FB1Alarm;6159;2.8009.013;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_Bearing1;0010.055201.155.010.0;HI T-Bearing 1;112351;1101;2;3;digit;1;FB1Alarm;6200;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_Bearing2;0010.055201.155.020.0;HI T-Bearing 2;112352;1101;3;3;digit;1;FB1Alarm;6201;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_Bearing3;0010.055201.155.030.0;HI T-Bearing 3;112353;1101;4;3;digit;1;FB1Alarm;6202;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_Bearing4;0010.055201.155.040.0;HI T-Bearing 4;112354;1101;5;3;digit;1;FB1Alarm;6203;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_Bearing5;0010.055201.155.050.0;HI T-Bearing 5;112355;1101;6;3;digit;1;FB1Alarm;6204;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_Bearing6;0010.055201.155.060.0;HI T-Bearing 6;112356;1101;7;3;digit;1;FB1Alarm;6205;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_Bearing7;0010.055201.155.070.0;HI T-Bearing 7;112357;1101;8;3;digit;1;FB1Alarm;6206;2.1090.901;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_Bearing8;0010.055201.155.080.0;HI T-Bearing 8;112358;1101;9;3;digit;1;FB1Alarm;6207;2.1090.902;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_Bearing9;0010.055201.155.090.0;HI T-Bearing 9;112359;1101;10;3;digit;1;FB1Alarm;6208;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_Bearing10;0010.055201.155.100.0;HI T-Bearing 10;112360;1101;11;3;digit;1;FB1Alarm;6209;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_Bearing11;0010.055201.155.110.0;HI T-Bearing 11;112361;1101;12;3;digit;1;FB1Alarm;6210;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_Bearing1;0010.055201.165.010.0;HIHI T-Bearing 1;112371;1101;13;3;digit;1;FB1Alarm;6211;2.3015.912;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_Bearing2;0010.055201.165.020.0;HIHI T-Bearing 2;112372;1101;14;3;digit;1;FB1Alarm;6212;1.0158.201;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_Bearing3;0010.055201.165.030.0;HIHI T-Bearing 3;112373;1087;15;3;digit;1;FB1Alarm;6213;1.4500.954;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_Bearing4;0010.055201.165.040.0;HIHI T-Bearing 4;112374;1087;16;3;digit;1;FB1Alarm;6214;2.0287.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_Bearing5;0010.055201.165.050.0;HIHI T-Bearing 5;112375;1087;17;3;digit;1;FB1Alarm;6215;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_Bearing6;0010.055201.165.060.0;HIHI T-Bearing 6;112376;1087;18;3;digit;1;FB1Alarm;6216;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_Bearing7;0010.055201.165.070.0;HIHI T-Bearing 7;112377;1087;19;3;digit;1;FB1Alarm;6217;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_Bearing8;0010.055201.165.080.0;HIHI T-Bearing 8;112378;1087;20;3;digit;1;FB1Alarm;6218;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_Bearing9;0010.055201.165.090.0;HIHI T-Bearing 9;112379;1087;21;3;digit;1;FB1Alarm;6219;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_Bearing10;0010.055201.165.100.0;HIHI T-Bearing 10;112380;1087;22;3;digit;1;FB1Alarm;6220;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_Bearing11;0010.055201.165.110.0;HIHI T-Bearing 11;112381;1087;23;3;digit;1;FB1Alarm;6221;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustA1;0010.006201.105.010.0;LO T-Exhaust A1;112401;1087;24;3;digit;1;FB1Alarm;6100;2.2010.108;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustA2;0010.006201.105.020.0;LO T-Exhaust A2;112402;1100;0;3;digit;1;FB1Alarm;6101;1.1075.061;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustA3;0010.006201.105.030.0;LO T-Exhaust A3;112403;1100;1;3;digit;1;FB1Alarm;6102;1.1100.503;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustA4;0010.006201.105.040.0;LO T-Exhaust A4;112404;1100;2;3;digit;1;FB1Alarm;6103;1.1100.506;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustA5;0010.006201.105.050.0;LO T-Exhaust A5;112405;1100;3;3;digit;1;FB1Alarm;6104;1.1200.501;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustA6;0010.006201.105.060.0;LO T-Exhaust A6;112406;1100;4;3;digit;1;FB1Alarm;6105;1.1020.604;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustA7;0010.006201.105.070.0;LO T-Exhaust A7;112407;1100;5;3;digit;1;FB1Alarm;6106;1.1200.503;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustA8;0010.006201.105.080.0;LO T-Exhaust A8;112408;1100;6;3;digit;1;FB1Alarm;6107;1.1020.507;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustA9;0010.006201.105.090.0;LO T-Exhaust A9;112409;1100;7;3;digit;1;FB1Alarm;6108;2.1000.049;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustA10;0010.006201.105.100.0;LO T-Exhaust A10;112410;1100;8;3;digit;1;FB1Alarm;6109;1.1020.504;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustB1;0010.006202.105.010.0;LO T-Exhaust B1;112411;1100;9;3;digit;1;FB1Alarm;6110;1.1020.505;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustB2;0010.006202.105.020.0;LO T-Exhaust B2;112412;1100;10;3;digit;1;FB1Alarm;6111;1.1020.508;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustB3;0010.006202.105.030.0;LO T-Exhaust B3;112413;1100;11;3;digit;1;FB1Alarm;6112;1.1020.509;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustB4;0010.006202.105.040.0;LO T-Exhaust B4;112414;1100;12;3;digit;1;FB1Alarm;6113;1.1020.600;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustB5;0010.006202.105.050.0;LO T-Exhaust B5;112415;1100;13;3;digit;1;FB1Alarm;6114;1.1020.601;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustB6;0010.006202.105.060.0;LO T-Exhaust B6;112416;1100;14;3;digit;1;FB1Alarm;6115;1.1020.602;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustB7;0010.006202.105.070.0;LO T-Exhaust B7;112417;1086;15;3;digit;1;FB1Alarm;6116;1.1020.605;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustB8;0010.006202.105.080.0;LO T-Exhaust B8;112418;1086;16;3;digit;1;FB1Alarm;6117;1.1020.606;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustB9;0010.006202.105.090.0;LO T-Exhaust B9;112419;1086;17;3;digit;1;FB1Alarm;6118;1.1020.607;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_T_ExhaustB10;0010.006202.105.100.0;LO T-Exhaust B10;112420;1086;18;3;digit;1;FB1Alarm;6119;1.1075.056;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_RawWaterBeforePump;0010.016102.010.000.0;P-Raw Water beforePump;112425;1080;0;3;bar;100000;0;;1.1100.505;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_RawWaterBeforePump;0010.016102.104.000.0;LM LO P-Raw Water BeforePump;112426;1080;1;3;bar;100000;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_P_RawWaterBeforePump;0010.016102.105.000.0;LO P-Raw Water before Pump;112427;1080;2;3;digit;1;FB1Alarm;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_LubeOilLastBearing;0010.025106.010.000.0;P-Lube Oil Last Bearing;112430;1080;3;3;bar;100000;0;;2.9902.100;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_LubeOilLastBearing;0010.025106.104.000.0;LM LO P-Lube Oil Last Bearing;112431;1080;4;3;bar;100000;0;;2.2010.116;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_P_LubeOilLastBearing;0010.025106.105.000.0;LO P-Lube Oil Last Bearing;112432;1080;5;3;digit;1;FB1Alarm;;1.0480.092;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_P_LubeOilLastBearing;0010.025106.114.000.0;LM LOLO P-Lube Oil Last Bearing;112433;1080;6;3;bar;100000;0;;2.1090.906;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LOLO_P_LubeOilLastBearing;0010.025106.115.000.0;LOLO P-Lube Oil Last Bearing;112434;1080;7;3;digit;1;FB1Alarm;;1.0173.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_LubeOilPistoncool;0010.025108.010.000.0;P-Lube Oil Pistoncool;112435;1080;8;3;bar;100000;0;;1.0173.017;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_LubeOilPistoncool;0010.025108.104.000.0;LM LO P-Lube Oil Pistoncool;112436;1080;9;3;bar;100000;0;;1.1020.203;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_P_LubeOilPistoncool;0010.025108.105.000.0;LO P-Lube Oil Pistoncool;112437;1080;10;3;digit;1;FB1Alarm;;1.2500.100;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_P_LubeOilPistoncool;0010.025108.114.000.0;LM LOLO P-Lube Oil Pistoncool;112438;1080;11;3;bar;100000;0;;1.1088.003;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LOLO_P_LubeOilPistoncool;0010.025108.115.000.0;LOLO P-Lube Oil Pistoncool;112439;1080;12;3;digit;1;FB1Alarm;;1.0117.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_ControlAir;0010.010101.010.000.0;P-Control Air;112445;1080;13;3;bar;100000;0;;2.0173.912;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_ControlAir;0010.010101.104.000.0;LM LO P-Control Air;112446;1080;14;3;bar;100000;0;;2.2510.913;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_P_ControlAir;0010.010101.105.000.0;LO P-Control Air;112447;1081;0;3;digit;1;FB1Alarm;;1.1088.005;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_ExhaustBack;0010.006101.010.000.0;P-Exhaust Back;112450;1081;1;3;mbar;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_ExhaustBack;0010.006101.154.000.0;LM HI P-Exhaust Back;112451;1081;2;3;mbar;100;0;;1.1100.504;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_P_ExhaustBack;0010.006101.155.000.0;HI P-Exhaust Back;112452;1081;3;3;digit;1;FB1Alarm;;1.1200.504;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_P_ExhaustBack;0010.006101.164.000.0;LM HIHI P-Exhaust Back;112453;1081;4;3;mbar;100;0;;1.1005.012;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_P_ExhaustBack;0010.006101.165.000.0;HIHI P-Exhaust Back;112454;1081;5;3;digit;1;FB1Alarm;;2.2010.115;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_FuelCRBankASaSy;0011.020101.010.010.0;P-Fuel (CR) Bank A SaSy;112455;1081;6;3;bar;100000;0;;1.1100.502;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_FuelCRBankBSaSy;0011.020101.010.020.0;P-Fuel (CR) Bank B SaSy;112456;1081;7;3;bar;100000;0;;1.1200.507;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_FuelCRSaSy;0011.020101.104.010.0;LM LO P-Fuel (CR) SaSy;112457;1081;8;3;bar;100000;0;;1.1020.502;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_P_FuelCRBankASaSy;0011.020101.105.010.0;LO P-Fuel Common Rail A SaSy;112458;1081;9;3;digit;1;FB1Alarm;;2.2010.117;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_P_FuelCRBankBSaSy;0011.020101.105.020.0;LO P-Fuel Common Rail B SaSy;112459;1081;10;3;digit;1;FB1Alarm;;2.1075.011;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_TD_P_FuelCRBankA;0010.020101.225.010.0;TD P-Fuel Common Rail A;112461;1081;11;3;digit;1;FB1Alarm;;1.1005.029;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_TD_P_FuelCRBankB;0010.020101.225.020.0;TD P-Fuel Common Rail B;112462;1081;12;3;digit;1;FB1Alarm;;1.1100.516;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_ETC5Speed;0010.056001.154.050.0;LM HI ETC 5 Speed;112466;1081;13;3;krpm;10000;0;;"1.0119.017
+1.5100.506 ECU9_2.4";;;;not used in Geno;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_ETC5Speed;0010.056001.155.050.0;HI ETC5 Speed;112467;1081;14;3;digit;1;FB1Alarm;;2.0119.901;;;;not used in Geno;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_ETC5Speed;0010.056001.164.050.0;LM HIHI ETC5 Speed;112468;1082;0;3;krpm;10000;0;;1.1075.207;;;;not used in Geno;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_ETC5Speed;0010.056001.165.050.0;HIHI ETC 5 Speed;112469;1082;1;3;digit;1;FB1Alarm;;2.0080.901;;;;not used in Geno;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_DiffPistoncoolFilter;0010.025109.010.000.0;P-Diff PistoncoolFilter;112470;1082;2;3;bar;100000;0;;2.0080.902;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_DiffPistoncoolFilter;0010.025109.154.000.0;LM HI P-Diff PistoncoolFilter;112471;1082;3;3;bar;100000;0;;2.7001.200;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_P_DiffPistoncoolFilter;0010.025109.155.000.0;HI P-Piston Cool.Oil Filt.Diff;112472;1082;4;3;digit;1;FB1Alarm;;2.1060.493;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_RawWater;0010.016101.010.000.0;P-Raw Water;112501;1086;19;3;bar;100000;0;;1.0147.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_RawWater;0010.016101.104.000.0;LM LO P-Raw Water;112502;1086;20;3;bar;100000;0;;"1.0147.017
+1.5100.206 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_P_RawWater;0010.016101.105.000.0;LO P-Raw Water;112503;1086;21;3;digit;1;FB1Alarm;6234;"1.0147.018
+1.5100.216 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EMUSecurityShutdown;0011.043102.010.000.0;EMU Security Shutdown;112509;1099;2;3;Bool;1;0;;1.1085.038;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_ExhaustMonitoringFail;0010.006207.205.000.0;AL Exhaust Monitoring Fail;112512;1099;5;3;digit;1;FB1Alarm;;"1.1602.012
+1.1602.093 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_SecurityChanneldefect;0011.043501.205.000.0;AL Security Channel def. SaSy;112516;1099;9;3;digit;1;FB1Alarm;;1.1602.024;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_TD_T_Coolant;0011.015201.225.000.0;TD T-Coolant;112518;1099;11;3;digit;1;FB1Alarm;6255;1.1602.026;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_TD_P_LubeOil;0011.025101.225.000.0;TD P-Lube Oil;112519;1099;12;3;digit;1;FB1Alarm;6256;1.1606.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_EMU11V;0011.043502.205.000.0;AL EMU 11V;112612;1085;20;3;digit;1;FB1Alarm;;"1.0215.017
+1.5100.616 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_EMU_7V;0011.043503.205.000.0;AL EMU 7V;112613;1085;21;3;digit;1;FB1Alarm;;"1.0123.018
+1.5100.136 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_T_ExhaustL2abovebelowEMU;0010.006206.205.030.0;AL T-Exhaust L2 above/below;112620;1085;22;3;digit;1;FB1Alarm;;1.1200.512;;;ED1_20(BL120);EIM Refitbox: ECU and EMU PVs combined, therefore new SysID;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EMUPowerLimitationActive;0011.043101.010.000.0;EMU Power Limitation Active;112630;1170;3;31;Bool;1;0;;1.1020.204;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EMUPowerLimitationExpected;0011.043101.010.010.0;EMU Power Limitation Expected;112631;1170;4;31;Bool;1;0;;2.7003.021;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EMUSecurityShutdownExpected;0011.043102.010.010.0;EMU Security Shutdown Expected;112632;1170;5;31;Bool;1;0;;2.7003.017;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_SplashOilB1;0010.025601.010.010.0;T-Splash Oil B1;112721;1084;18;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_SplashOilB2;0010.025601.010.020.0;T-Splash Oil B2;112722;1084;19;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_SplashOilB3;0010.025601.010.030.0;T-Splash Oil B3;112723;1084;20;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_SplashOilB4;0010.025601.010.040.0;T-Splash Oil B4;112724;1084;21;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_SplashOilB5;0010.025601.010.050.0;T-Splash Oil B5;112725;1084;22;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_SplashOilB6;0010.025601.010.060.0;T-Splash Oil B6;112726;1084;23;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_SplashOilB7;0010.025601.010.070.0;T-Splash Oil B7;112727;1084;24;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_SplashOilB8;0010.025601.010.080.0;T-Splash Oil B8;112728;1097;0;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_SplashOilB9;0010.025601.010.090.0;T-Splash Oil B9;112729;1097;1;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_SplashOilB10;0010.025601.010.100.0;T-Splash Oil B10;112730;1097;2;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_SplashOilB1;0010.025601.155.010.0;HI T-Splash Oil B1;112771;1082;18;3;digit;1;FB1Alarm;6268;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_SplashOilB2;0010.025601.155.020.0;HI T-Splash Oil B2;112772;1082;19;3;digit;1;FB1Alarm;6269;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_SplashOilB3;0010.025601.155.030.0;HI T-Splash Oil B3;112773;1082;20;3;digit;1;FB1Alarm;6270;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_SplashOilB4;0010.025601.155.040.0;HI T-Splash Oil B4;112774;1082;21;3;digit;1;FB1Alarm;6271;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_SplashOilB5;0010.025601.155.050.0;HI T-Splash Oil B5;112775;1082;22;3;digit;1;FB1Alarm;6272;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_SplashOilB6;0010.025601.155.060.0;HI T-Splash Oil B6;112776;1082;23;3;digit;1;FB1Alarm;6273;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_SplashOilB7;0010.025601.155.070.0;HI T-Splash Oil B7;112777;1082;24;3;digit;1;FB1Alarm;6274;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_SplashOilB8;0010.025601.155.080.0;HI T-Splash Oil B8;112778;1095;0;3;digit;1;FB1Alarm;6275;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_SplashOilB9;0010.025601.155.090.0;HI T-Splash Oil B9;112779;1095;1;3;digit;1;FB1Alarm;6276;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_SplashOilB10;0010.025601.155.100.0;HI T-Splash Oil B10;112780;1095;2;3;digit;1;FB1Alarm;6277;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_SplashOilB1;0010.025601.165.010.0;HIHI T-Splash Oil B1;112781;1095;3;3;digit;1;FB1Alarm;6278;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_SplashOilB2;0010.025601.165.020.0;HIHI T-Splash Oil B2;112782;1095;4;3;digit;1;FB1Alarm;6279;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_SplashOilB3;0010.025601.165.030.0;HIHI T-Splash Oil B3;112783;1095;5;3;digit;1;FB1Alarm;6280;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_SplashOilB4;0010.025601.165.040.0;HIHI T-Splash Oil B4;112784;1095;6;3;digit;1;FB1Alarm;6281;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_SplashOilB5;0010.025601.165.050.0;HIHI T-Splash Oil B5;112785;1095;7;3;digit;1;FB1Alarm;6282;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_SplashOilB6;0010.025601.165.060.0;HIHI T-Splash Oil B6;112786;1095;8;3;digit;1;FB1Alarm;6283;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_SplashOilB7;0010.025601.165.070.0;HIHI T-Splash Oil B7;112787;1095;9;3;digit;1;FB1Alarm;6284;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_SplashOilB8;0010.025601.165.080.0;HIHI T-Splash Oil B8;112788;1095;10;3;digit;1;FB1Alarm;6285;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_SplashOilB9;0010.025601.165.090.0;HIHI T-Splash Oil B9;112789;1095;11;3;digit;1;FB1Alarm;6286;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_SplashOilB10;0010.025601.165.100.0;HIHI T-Splash Oil B10;112790;1095;12;3;digit;1;FB1Alarm;6287;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_SplashOilB1;0010.025601.154.010.0;LM HI T-Splash Oil B1;112801;1081;19;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_SplashOilB2;0010.025601.154.020.0;LM HI T-Splash Oil B2;112802;1081;20;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_SplashOilB3;0010.025601.154.030.0;LM HI T-Splash Oil B3;112803;1081;21;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_SplashOilB4;0010.025601.154.040.0;LM HI T-Splash Oil B4;112804;1081;22;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_SplashOilB5;0010.025601.154.050.0;LM HI T-Splash Oil B5;112805;1081;23;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_SplashOilB6;0010.025601.154.060.0;LM HI T-Splash Oil B6;112806;1081;24;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_SplashOilB7;0010.025601.154.070.0;LM HI T-Splash Oil B7;112807;1094;0;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_SplashOilB8;0010.025601.154.080.0;LM HI T-Splash Oil B8;112808;1094;1;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_SplashOilB9;0010.025601.154.090.0;LM HI T-Splash Oil B9;112809;1094;2;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_SplashOilB10;0010.025601.154.100.0;LM HI T-Splash Oil B10;112810;1094;3;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_SplashOilB1;0010.025601.164.010.0;LM HIHI T-Splash Oil B1;112811;1094;4;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_SplashOilB2;0010.025601.164.020.0;LM HIHI T-Splash Oil B2;112812;1094;5;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_SplashOilB3;0010.025601.164.030.0;LM HIHI T-Splash Oil B3;112813;1094;6;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_SplashOilB4;0010.025601.164.040.0;LM HIHI T-Splash Oil B4;112814;1094;7;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_SplashOilB5;0010.025601.164.050.0;LM HIHI T-Splash Oil B5;112815;1094;8;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_SplashOilB6;0010.025601.164.060.0;LM HIHI T-Splash Oil B6;112816;1094;9;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_SplashOilB7;0010.025601.164.070.0;LM HIHI T-Splash Oil B7;112817;1094;10;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_SplashOilB8;0010.025601.164.080.0;LM HIHI T-Splash Oil B8;112818;1094;11;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_SplashOilB9;0010.025601.164.090.0;LM HIHI T-Splash Oil B9;112819;1094;12;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_SplashOilB10;0010.025601.164.100.0;LM HIHI T-Splash Oil B10;112820;1094;13;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_MG_SplashOilCalActive;0010.025603.231.010.0;MG Splash Oil Cal Active;112823;1080;16;3;digit;1;FB1Alarm;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_SplashOilCalnotPoss;0010.025604.205.010.0;AL Splash Oil Cal not Poss;112824;1080;17;3;digit;1;FB1Alarm;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_SplashOilMean;0010.025602.010.010.0;T-Splash Oil Mean;112841;1093;4;3;degC;100;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_SplashOilMeanFailure;0010.025602.010.020.0;T-Splash Oil Mean Failure;112843;1093;5;3;Bool;1;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EMUChannelswitchoffSlot9;0010.080002.012.090.0;EMU Channel switch off Slot 9;112992;1093;7;3;digit;1;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EMUChannelswitchoffSlot8;0010.080002.012.080.0;EMU Channel switch off Slot 8;112993;1093;8;3;digit;1;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EMUChannelswitchoffSlot7;0010.080002.012.070.0;EMU Channel switch off Slot 7;112994;1093;9;3;digit;1;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EMUChannelswitchoffSlot6;0010.080002.012.060.0;EMU Channel switch off Slot 6;112995;1093;10;3;digit;1;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EMUChannelswitchoffSlot5;0010.080002.012.050.0;EMU Channel switch off Slot 5;112996;1093;11;3;digit;1;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EMUChannelswitchoffSlot4;0010.080002.012.040.0;EMU Channel switch off Slot 4;112997;1093;12;3;digit;1;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EMUChannelswitchoffSlot3;0010.080002.012.030.0;EMU Channel switch off Slot 3;112998;1093;13;3;digit;1;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EMUChannelswitchoffSlot2;0010.080002.012.020.0;EMU Channel switch off Slot 2;112999;1093;14;3;digit;1;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;TurnEngineActive;0010.040601.010.000.0;Turn Engine Active;114391;1171;0;31;Bool;1;0;;10.0914.391;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;InfoTextCPM;0010.075703.010.000.0;Info Text CPM;116003;1210;2;7;digit;1;InfoText;;2.2510.912;;;ED1_11 (BL70);R70;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_CPM;0010.087204.010.000.0;T-CPM;116005;1210;4;7;degC;100;0;;1.2500.026;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CPM_PowerSupplyVoltage;0010.087205.010.000.0;CPM Power Supply Voltage;116006;1210;5;7;V;1000;0;;2.1060.040;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CPM_SensorConfiguration1;0010.087200.010.000.0;CPM Sensor Configuration 1;116007;1210;6;7;digit;1;0;;2.7000.004;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceA1;0010.087201.010.000.0;Cylinder Performance Cyl. A1;116011;1210;10;7;%;1000;0;;1.3000.017;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceA2;0010.087201.010.010.0;Cylinder Performance Cyl. A2;116012;1210;11;7;%;1000;0;;2.1060.011;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceA3;0010.087201.010.020.0;Cylinder Performance Cyl. A3;116013;1210;12;7;%;1000;0;;2.7000.007;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceA4;0010.087201.010.030.0;Cylinder Performance Cyl. A4;116014;1210;13;7;%;1000;0;;2.8009.009;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceA5;0010.087201.010.040.0;Cylinder Performance Cyl. A5;116015;1210;14;7;%;1000;0;;2.2510.010;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceA6;0010.087201.010.050.0;Cylinder Performance Cyl. A6;116016;1210;15;7;%;1000;0;;2.1060.051;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceA7;0010.087201.010.060.0;Cylinder Performance Cyl. A7;116017;1210;16;7;%;1000;0;;2.1060.003;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceA8;0010.087201.010.070.0;Cylinder Performance Cyl. A8;116018;1210;17;7;%;1000;0;;2.2010.103;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceA9;0010.087201.010.080.0;Cylinder Performance Cyl. A9;116019;1210;18;7;%;1000;0;;2.2010.104;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceA10;0010.087201.010.090.0;Cylinder Performance Cyl. A10;116020;1210;19;7;%;1000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceB1;0010.087202.010.000.0;Cylinder Performance Cyl. B1;116021;1210;20;7;%;1000;0;;2.1090.0**;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceB2;0010.087202.010.010.0;Cylinder Performance Cyl. B2;116022;1210;21;7;%;1000;0;;2.2500.036;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceB3;0010.087202.010.020.0;Cylinder Performance Cyl. B3;116023;1210;22;7;%;1000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceB4;0010.087202.010.030.0;Cylinder Performance Cyl. B4;116024;1210;23;7;%;1000;0;;2.1060.071;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceB5;0010.087202.010.040.0;Cylinder Performance Cyl. B5;116025;1210;24;7;%;1000;0;;;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceB6;0010.087202.010.050.0;Cylinder Performance Cyl. B6;116026;1211;0;7;%;1000;0;;1.0100.001;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceB7;0010.087202.010.060.0;Cylinder Performance Cyl. B7;116027;1211;1;7;%;1000;0;;"1.0100.015
+1.5100.896 ECU9_2.4";;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceB8;0010.087202.010.070.0;Cylinder Performance Cyl. B8;116028;1211;2;7;%;1000;0;;"1.0100.016
+1.5100.906 ECU9_2.4";;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceB9;0010.087202.010.080.0;Cylinder Performance Cyl. B9;116029;1211;3;7;%;1000;0;;2.0100.901;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceB10;0010.087202.010.090.0;Cylinder Performance Cyl. B10;116030;1211;4;7;%;1000;0;;2.0100.902;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CylinderPerformanceMean;0010.087203.010.000.0;Cylinder Performance Mean;116031;1211;5;7;%;1000;0;;1.0106.001;;;;GasMobil;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CPMPowerLimitationExpected;0010.087214.010.000.0;;116032;1211;6;7;digit;1;0;;;;;;Ed1.17: Fehlte in der Spez.;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;CPMSecurityShutdownExpected;0010.087213.010.000.0;;116033;1211;7;7;digit;1;0;;;;;;Ed1.17: Fehlte in der Spez.;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;InfoTextESD;0010.075704.010.000.0;Info Text ESD;170012;1200;11;5;digit;1;InfoText;;2.1060.011;;;R70;;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;MMS_InjectorWearActive;0010.002026.012.000.0;Injector Wear Active;170164;1207;18;5;digit;1;;;;;;R90;;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_EIM;0010.060300.010.000.0;T-EIM;900001;1164;24;31;degC;100;0;;2.7001.008;;;;;1;-;398703;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;FB_PrimingOnEIM;0010.040104.010.000.0;FB Priming On (EIM);900006;1137;15;31;Bool;1;0;;2.1060.040;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;Cmd_PrimingOnEIM;0010.040104.013.000.0;Cmd Priming On (EIM);900007;1137;16;31;Bool;1;0;;2.7000.004;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;DisengageRequest;0010.043103.013.000.0;Disengage Request;900009;1148;18;31;Bool;1;0;;2.7000.005;;;;not used in Geno;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_StartAir;0010.007101.010.000.0;P-Start Air ;900042;1170;6;31;bar;100000;0;;"1.0107.015
+1.5100.746 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_MMS_MainPowerFail;0010.050002.205.010.0;AL MMS Main Power Fail;900055;1148;9;31;digit;1;FB1Alarm;8005;2.0152.901;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_EIMEmergencyPS_Fail;0010.050002.205.020.0;AL MMS Emerg Power Fail;900056;1148;10;31;digit;1;FB1Alarm;8008;2.0151.911;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_StarterSupplyVoltage;0010.050003.105.010.0;LO Starter Supply Voltage;900057;1148;11;31;digit;1;FB1Alarm;8011;1.3010.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_MG_StarterSupplyVoltage;0010.040507.231.000.0;MG Starter Supply Voltage;900058;1130;21;31;digit;1;0;;2.3012.911;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_SDAF_Fail;0010.043602.205.000.0;AL Shut Down Air Flaps Fail;900059;1148;5;31;digit;1;FB1Alarm;8016;1.3010.002;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_MMS_InternalPowerFail;0010.050001.205.010.0;AL MMS Internal Power Fail;900061;1148;12;31;digit;1;FB1Alarm;8012;2.2010.109;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_BatteryChargerFailure;0010.050201.205.000.0;AL Battery Charge Fail;900062;1148;13;31;digit;1;FB1Alarm;8014;2.2010.113;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_SDAF_Closed;0010.043601.205.000.0;AL Shut Down Air Flaps closed;900065;1148;4;31;digit;1;FB1Alarm;8015;2.0104.911;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;StatusEmergStopCircuitFail;0010.043305.010.000.0;Status Emerg.Stop Circuit Fail;900067;1148;0;31;digit;1;0;;10.0920.067;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_EmergStopCircuitFail;0010.043305.205.000.0;AL Emerg. Stop Circuit Fail;900068;1148;1;31;digit;1;FB1Alarm;8017;2.2010.105;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_EngineOverspeedHW;0010.000501.165.010.0;HIHI Overspeed (ECU);900069;1137;23;31;digit;1;FB1Alarm;8034;1.3010.003;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_EmergencyStop;0010.043307.205.000.0;AL Emergency Stop;900070;1148;2;31;digit;1;FB1Alarm;8018;2.3012.912;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_PrimingPumpFail;0010.040105.205.000.0;AL Priming Pump Fail;900071;1137;19;31;digit;1;FB1Alarm;8002;2.3013.932;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_AirStarterFail;0010.040702.205.000.0;AL Air Starter Fail;900072;1130;23;31;digit;1;FB1Alarm;8019;1.1020.200;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;StatusStarterFail;0010.040414.010.000.0;Status Starter Fail;900073;1130;24;31;digit;1;0;;1.1020.201;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_ElectricStarterFail;0010.040701.205.000.0;AL Electric Starter Fail;900074;1130;22;31;digit;1;FB1Alarm;8020;2.2010.107;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_P_StartAir;0010.007101.105.000.0;LO P-Start Air;900075;1170;8;31;digit;1;FB1Alarm;8021;2.8009.015;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LOLO_P_StartAirStartTerm;0010.007101.115.000.0;LOLO P-Start Air;900076;1170;10;31;digit;1;FB1Alarm;8022;2.1051.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EIMStatusPrimingPumpFail;0010.040105.010.000.0;EIM Status Priming Pump Fail;900080;1137;17;31;digit;1;0;;10.0920.080;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_StartpilotFail;0010.040704.205.000.0;AL Startpilot Fail;900083;1130;0;31;digit;1;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_StartTerminated;0010.040705.205.000.0;AL Start terminated;900084;1130;1;31;digit;1;FB1Alarm;8024;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;StatusStartProcedure;0010.040412.010.000.0;Status Start Procedure;900088;1130;11;31;digit;1;0;;10.0920.088;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;StarterSupplyVoltage;0010.050003.010.010.0;Starter Supply Voltage;900089;1149;6;31;V;1000;0;;2.1090.060;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_MG_ColdStartRequired;0010.040706.235.000.0;MG Cold Start Required;900092;1130;2;31;digit;1;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_P_Priming;0010.040105.105.000.0;LO P-Priming;900093;1130;3;31;digit;1;FB1Alarm;8004;;LO P-Priming;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_MG_EtherInjectionactivated;0010.040708.235.000.0;MG Ether Injection activated;900095;1138;10;31;digit;1;0;;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_StartAir;0010.007101.104.000.0;LM LO P-Start Air ;900098;1170;7;31;bar;100000;0;;10.0920.098;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_P_StartAirStartTerm;0010.007101.114.000.0;LM LOLO P-Start Air/Start Term;900099;1170;9;31;bar;100000;0;;2.0153.901;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_MG_NotReadyforOperation;0010.040505.231.000.0;MG Not Ready for Operation;900102;1130;16;31;digit;1;0;;1.8000.0**;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_MG_ExternalStartInterlock;0010.040504.231.000.0;MG External Start Interlock;900103;1130;14;31;digit;1;0;;2.7000.008;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_MG_SDAF_closed;0010.040503.231.000.0;MG SDAF closed;900104;1130;17;31;digit;1;0;;2.0140.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_MG_GearnotNeutral;0010.040501.231.000.0;MG Gear not Neutral;900105;1130;18;31;digit;1;0;;10.0920.105;;;;not used in Geno;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_MG_BarringGearEngaged;0010.040502.231.000.0;MG Barring Gear Engaged;900106;1130;19;31;digit;1;0;;10.0920.106;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_BarringGearEngaged;0010.040801.205.000.0;AL Barring Gear Engaged;900107;1130;20;31;digit;1;FB1Alarm;8025;10.0920.107;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_SecurityShutdownMMS;0010.043102.205.000.0;AL Security Shutdown;900123;1148;6;31;digit;1;FB1Alarm;8028;2.0140.911;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_OverrideActivated;0010.043201.205.000.0;AL Override Activated ;900125;1137;22;31;digit;1;FB1Alarm;8001;2.0159.901;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EIMConfiguration;0010.080003.012.010.0;EIM Configuration;900130;1148;23;31;digit;1;0;;2.0120.912;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_EIMDefect;0010.060301.205.000.0;AL EIM defect;900145;1148;16;31;digit;1;FB1Alarm;8029;1.0126.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_MG_StarterNotReady;0010.040506.231.000.0;MG Starter Not Ready;900152;1130;15;31;digit;1;0;;1.0122.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;StartInterlock;0010.040413.010.000.0;Start Interlock;900153;1130;13;31;Bool;1;0;;1.0109.001;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ReadyforStartStop;0010.040415.010.000.0;Ready for Start/Stop;900179;1130;12;31;Bool;1;0;;10.0920.179;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;TimeEngineCoolingDown      ;0010.042112.010.030.0;Time Engine Cooling Down      ;900180;1181;5;31;sec;1;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;StateEngineStartStop       ;0010.040408.010.000.0;State Engine Start_Stop       ;900181;1181;6;31;digit;1;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_MG_ColdStart;0010.040426.235.000.0;MG ColdStart;900183;1138;11;31;digit;1;0;;1.1752.114;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;Startactive;0010.040405.010.000.0;Start active;900216;1170;11;31;Bool;1;0;;1.1020.202;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;StatusReadyforOperation;0010.040301.010.000.0;Status Ready for Operation;900217;1137;12;31;Bool;1;0;;1.3010.012;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_StartAir;0010.007101.154.000.0;LM HI P-Start Air;900296;1167;23;31;bar;100000;0;;2.0126.912;;;;Doeksen Auftrag;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_P_StartAir;0010.007101.164.000.0;LM HIHI P-Start Air;900297;1167;24;31;bar;100000;0;;2.0127.912;;;;Doeksen Auftrag;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_PowerLimitationActiveMMS;0010.043101.205.000.0;AL Power Limitation Active;900300;1149;11;31;digit;1;FB1Alarm;8013;"1.0132.017
+1.5101.076 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ETC1Running;0010.056003.010.010.0;ETC 1 Running;900301;1149;12;31;Bool;1;0;;10.0920.301;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EngineStopActiveFeedback;0010.042105.010.000.0;Engine Stop Active;900302;1149;13;31;Bool;1;0;;10.0920.302;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_OilRefillPump;0010.025401.010.000.0;P-Oil Refill Pump;900303;1149;14;31;bar;100000;0;;10.0920.303;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_P_OilRefillPump;0010.025401.105.000.0;LO P-Oil Refill Pump ;900304;1149;15;31;digit;1;FB1Alarm;8031;;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_OilRefillPump;0010.025401.104.000.0;LM LO P-Oil Refill Pump;900305;1149;16;31;bar;100000;0;;1.1020.506;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;InfoTextEIM;0010.075702.010.000.0;Info Text EIM;900312;1171;21;31;digit;1;InfoText;;2.2010.121;;;;;1;-;383282;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ETC2Running;0010.056003.010.020.0;ETC 2 Running;900505;1171;7;31;Bool;1;0;;"1.0223.015
+1.5100.966 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;FuelConsumptMaxlhDIS;0010.020407.010.000.0;Fuel Consumpt. Max. l/h DIS;900509;1170;0;31;l/h;1000;0;;1.1085.038;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;FuelConsumptActDIS;0010.020408.010.000.0;Fuel Consumpt. Act. % DIS;900510;1170;1;31;%;1000;0;;1.1602.949;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;FuelConsMeanTripDIS;0010.020409.010.000.0;Fuel Cons. Mean Trip % DIS;900511;1170;2;31;%;1000;0;;1.1602.950;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ETC3Running;0010.056003.010.030.0;ETC 3 Running;900512;1171;8;31;Bool;1;0;;"1.1602.012
+1.1602.093 ECU9_2.4";;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ETC4Running;0010.056003.010.040.0;ETC 4 Running;900513;1171;9;31;Bool;1;0;;1.1602.122;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ETC5Running;0010.056003.010.050.0;ETC 5 Running;900514;1137;3;31;Bool;1;0;;1.1602.086;;;;not used in Geno;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;MMSConfiguration1;0010.080001.010.010.0;MMS Configuration 1;900520;1149;17;31;digit;1;0;;1.1600.042;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;MMSConfiguration2;0010.080001.010.020.0;MMS Configuration 2;900521;1149;18;31;digit;1;0;;1.1600.079;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;MMSConfiguration3;0010.080001.010.030.0;MMS Configuration 3;900522;1149;19;31;digit;1;0;;1.1600.108;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;MMSConfiguration4;0010.080001.010.040.0;MMS Configuration 4;900523;1149;20;31;digit;1;0;;1.1600.109;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ECUSecurityShutdown;0010.043102.010.000.0;ECU Security Shutdown;900524;1149;21;31;Bool;1;0;;1.1600.110;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;MMSConfiguration5;0010.080001.010.050.0;MMS Configuration 5;900525;1139;2;31;digit;1;0;;1.1600.112;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;MMS_Nodes;0070.075210.010.010.0;MMS Nodes;900915;1171;11;31;digit;1;0;;10.0920.915;;;;;1;-;-;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;RA_Dosing_ApprovalSXU;0012.024400.010.400.0;RA Dosing Release SCR F1;180001;1220;0;4;Bool;1;0;;1.1702.381;RA_dosing_release_SCRsys_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110664;Tx_1;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_RAatPFMSXU;0012.024100.010.400.0;T-Reducing Agent SUDU1;180002;1220;1;4;degC;100;0;;1.0721.012;T_RA_SUDU_1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110665;Tx_2;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_RAatPFMSXU;0012.024100.154.400.0;LM HI T-Reducing Agent SUDU1;180003;1220;2;4;degC;100;0;;1.5101.996;MonLim_T_RA_SUDU_HI1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110662;Tx_3;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustSCRInlet1SXU;0012.006200.010.400.0;T-Exhaust SCR Inlet 1;180004;1220;3;4;degC;100;0;;1.0204.001;T_Exh_SCRsys_inl_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110654;Tx_4;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_ExhaustSCROutlet1SXU;0012.006201.010.400.0;T-Exhaust SCR Outlet 1;180005;1220;4;4;degC;100;0;;1.0204.301;T_Exh_SCRsys_outl_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110656;Tx_5;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_ExhaustSCRSXU;0012.006200.154.400.0;LM HI T-Exhaust SCR;180006;1220;5;4;degC;100;0;;1.5101.206;MonLim_T_Exh_SCRsys_max_HI1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110657;Tx_6;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_ExhaustSCRSXU;0012.006200.164.400.0;LM HIHI T-Exhaust SCR;180007;1220;6;4;degC;100;0;;1.5101.216;MonLim_T_Exh_SCRsys_max_HI2;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110658;Tx_7;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_ExhaustSCRInlet1SXU;0012.006502.010.400.0;P-Exhaust SCR Inlet 1;180008;1220;7;4;bar;100000;0;;1.0238.001;p_Exh_SCRsys_inl_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110695;Tx_8;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_ExhaustSCRInlet1SXU;0012.006502.154.400.0;LM HI P-Exhaust SCR Inlet 1;180009;1220;8;4;bar;100000;0;;1.5101.856;MonLim_p_Exh_SCRsys_inl_HI1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110696;Tx_9;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_P_ExhaustSCRInlet1SXU;0012.006502.164.400.0;LM HIHI P-Exhaust SCR Inlet 1;180010;1220;9;4;bar;100000;0;;1.5101.866;MonLim_p_Exh_SCRsys_inl_HI2;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110697;Tx_10;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_ExhaustDiffSCR1SXU;0012.006500.010.400.0;P-Exhaust Diff. SCR;180011;1220;10;4;bar;100000;0;;1.0238.101;dp_Exh_SCRsys_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110661;Tx_11;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_ExhaustDiffSCR1SXU;0012.006500.154.400.0;LM HI P-Exhaust Diff. SCR;180012;1220;11;4;bar;100000;0;;1.0238.015;MonLim_dp_Exh_SCRsys_HI1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110659;Tx_12;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_P_ExhaustDiffSCR1SXU;0012.006500.164.400.0;LM HIHI P-Exhaust Diff. SCR;180013;1220;12;4;bar;100000;0;;1.0238.016;MonLim_dp_Exh_SCRsys_HI2;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110660;Tx_13;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_DosingAirSUDU1SXU;0012.010200.010.400.0;P-DosingAir SUDU1;180014;1220;13;4;bar;100000;0;;1.0721.015;p_DosingAir_SMA_SUDU1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;--;Tx_14;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_RAFilterOutAtPFMSXU;0012.024200.010.400.0;P-RA  DU1;180015;1220;14;4;bar;100000;0;;1.0721.013;p_RA_DU_1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110666;Tx_15;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ActualRAVolumeSXU;0012.024427.010.400.0;Actual RA Volume;180016;1220;15;4;g/h;10000;0;;1.0721.011;mt_RA_actual_SUDU1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110676;Tx_16;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;RA_ConcentrationSXU;0012.024424.010.400.0;RA Concentration;180017;1220;16;4;%;1000;0;;1.0243.001;c_RA;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;?;Tx_17;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_RA_ConcentrationSXU;0012.024424.104.400.0;LM LO RA Concentration;180018;1220;17;4;%;1000;0;;1.1755.012;MonLim_c_RA_LO1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;?;Tx_18;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_RA_ConcentrationSXU;0012.024424.154.400.0;LM HI RA Concentration;180019;1220;18;4;%;1000;0;;1.1755.014;MonLim_c_RA_HI1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;?;Tx_19;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_RA_ConcentrationSXU;0012.024424.114.400.0;LM LOLO RA Concentration;180020;1220;19;4;%;1000;0;;1.1755.013;MonLim_c_RA_LO2;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;?;Tx_20;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_RA_ConcentrationSXU;0012.024424.164.400.0;LM HIHI RA Concentration;180021;1220;20;4;%;1000;0;;1.1755.015;MonLim_c_RA_HI2;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;?;Tx_21;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;FB_EGAT_Bypass_PositionClosedReachedSXU;0012.058600.010.400.0;EGAT Bypass Position Closed reached;180022;1220;21;4;Bool;1;0;;1.9920.012;EGAT Bypass Pos Closed reached;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_22;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;FB_EGAT_Bypass_PositionOpenReachedSXU;0012.058600.010.410.0;EGAT Bypass Position Open reached;180023;1220;22;4;Bool;1;0;;1.9920.013;EGAT Bypass Pos Open reached;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_23;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;FB_EGAT_BypassTestActiveSXU;0012.058601.010.400.0;FB_EGAT_BypassTestActive;180024;1220;23;4;Bool;1;0;;1.9920.033;EGAT_Full_Bypass_test_in_pro;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_24;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SXUPowerSupply;0012.050101.010.400.0;U-SXU;180025;1220;24;4;V;1000;0;;2.0140.101;U_PowerSupply_SXU;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_25;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_SXU;0012.057300.010.400.0;T-SXU;180026;1221;0;4;degC;100;0;;1.0132.101;T_SXU;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_26;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ActualRAConsumptionSXU;0012.024427.010.410.0;;180028;1221;1;4;l/h;1000;0;;1.1750.301;Vt_RaConsumptionActual;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110682;Tx_28;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;InfoTextSXU;0012.075700.010.400.0;Info Text SXU;180212;1221;2;4;digit;1;InfoText;;2.2010.003;SXU_Info_Text;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_29;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SXUPowerLimitationExpectedSXU;0012.043101.010.410.0;Power Reduction Soon SXU;180035;1221;8;4;Bool;1;0;;2.8009.042;B_Power_Reduction_Soon_SXU;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_35;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SXUSecurityShutdownExpectedSXU;0012.043102.010.410.0;Security Shutdown Soon SXU;180036;1221;9;4;Bool;1;0;;2.8009.041;B_Security_Shutdown_Soon_SXU;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_36;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EGAT Bypass Handwheel EngageSXU;0012.058602.010.400.0;FB_EGAT_BypassHandWheel_Engaged;180031;1221;5;4;Bool;1;0;;1.9920.035;B_EGAT_FullBypassHandWheel_Engaged;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_31;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_ExhaustSCRInlet1_redundantSXU;0012.006503.010.410.0;P_ExhaustSCRInlet1_redundant;180032;1221;10;4;bar;100000;0;;1.0239.001;p_Exh_SCRsys_inl_F1_rdnt;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;--;Tx_32;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_T_RAatPFMSXU;0012.024100.104.400.0;LM_LO_T_RAatPFM;180037;1221;11;4;degC;100;0;;1.5101.986;MonLim_T_RA_SUDU_LO1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110663;Tx_37;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_RA_DUSXU;0012.024200.104.400.0;LM_LO_P_RAFilterOutAtPFM;180038;1221;12;4;bar;100000;0;;1.5102.006;MonLim_p_RA_DU_LO1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110667;Tx_38;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_RA_DUSXU;0012.024200.154.400.0;LM_HI_P_RA_DU;180039;1221;13;4;bar;100000;0;;1.5102.016;MonLim_p_RA_DU_HI1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_39;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCR_SystemReadySXU;0012.089200.010.400.0;SCR_SystemReady;180040;1221;14;4;Bool;1;0;;1.1702.719;B_RA_dosing_release_EGAT_monitoring_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_40;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCR_EnvCondReleaseSXU;0012.089201.010.400.0;SCR_EnvCondRelease;180041;1221;15;4;Bool;1;0;;1.1702.713;B_RA_dosing_release_env_conds_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_41;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EGAT_SystemFaultState1SXU;0012.089100.010.400.0;EGAT_SystemFaultState1;180042;1221;16;4;digit;1;0;;1.0721.045;Fault_state_1_SMA_SUDU1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_42;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EGAT_SystemFaultState2SXU;0012.089100.010.410.0;EGAT_SystemFaultState2;180043;1221;17;4;digit;1;0;;1.0721.048;Fault_state_2_SMA_SUDU1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_43;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EGAT_Configuration1SXU;0010.080004.010.410.0;EGAT Configuration 1;180044;1221;18;4;digit;1;0;;1.1750.851;Configuration1_EGAT_sys;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110651;Tx_44;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EGAT_Configuration2SXU;0010.080004.010.420.0;EGAT Configuration 2;180045;1221;19;4;digit;1;0;;1.1750.852;Configuration2_EGAT_sys;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110652;Tx_45;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EGAT_Configuration3SXU;0010.080004.010.430.0;EGAT Configuration 3;180046;1221;20;4;digit;1;0;;1.1750.853;Configuration3_EGAT_sys;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;110653;Tx_46;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC1_DepositionCounterSXU;0012.089203.010.400.0;;180047;1221;21;4;sec;1;0;;1.1731.005;t_HC1_load_timer_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_47;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC2_DepositionCounterSXU;0012.089204.010.400.0;;180048;1221;22;4;sec;1;0;;1.1731.025;t_HC2_load_timer_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_48;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC1_DepositionTemperatueSXU;0012.089203.012.420.0;;180049;1221;23;4;degC;100;0;;1.1731.011;T_HC1_Load_Lim_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_49;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC2_DepositionTemperatueSXU;0012.089204.012.420.0;;180050;1221;24;4;degC;100;0;;1.1731.031;T_HC2_Load_Lim_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_50;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC1_DepositionActiveSXU;0012.089203.010.410.0;;180051;1222;0;4;Bool;1;0;;1.1731.001;B_HC1_Load_in_progress_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_51;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC2_DepositionActiveSXU;0012.089204.010.410.0;;180052;1222;1;4;Bool;1;0;;1.1731.021;B_HC2_Load_in_progress_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_52;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC1_RegenerationRequestedSXU;0012.089203.012.430.0;;180053;1222;2;4;Bool;1;0;;1.1731.004;B_HC1_Rgn_necessary_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_53;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC2_RegenerationRequestedSXU;0012.089204.012.430.0;;180054;1222;3;4;Bool;1;0;;1.1731.024;B_HC2_Rgn_necessary_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_54;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC1_RegenMinTemperatueSXU;0012.089203.012.440.0;;180055;1222;4;4;degC;100;0;;1.1731.012;T_HC1_Rgn_Lim_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_55;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC2_RegenMinTemperatueSXU;0012.089204.012.440.0;;180056;1222;5;4;degC;100;0;;1.1731.032;T_HC2_Rgn_Lim_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_56;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC1_RegenTemperatueReachedSXU;0012.089203.012.450.0;;180057;1222;6;4;Bool;1;0;;1.1731.003;B_HC1_Rgn_T_reached_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_57;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC2_RegenTemperatueReachedSXU;0012.089204.012.450.0;;180058;1222;7;4;Bool;1;0;;1.1731.023;B_HC2_Rgn_T_reached_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_58;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC1_RegenerationActiveSXU;0012.089203.012.460.0;;180059;1222;8;4;Bool;1;0;;1.1731.022;B_HC1_Rgn_in_progress_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_60;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC2_RegenerationActiveSXU;0012.089204.012.460.0;;180060;1222;9;4;Bool;1;0;;1.1731.002;B_HC2_Rgn_in_progress_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_59;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC1_ExpectedRegenTimeSXU;0012.089203.012.480.0;;180061;1222;10;4;sec;1;0;;1.1731.009;t_HC1_Rgn_remaining_F1;;ED1_18 (BVNG_BL100);#14588 SmartAGN;1;;;;Tx_61;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC2_ExpectedRegenTimeSXU;0012.089204.012.480.0;;180062;1222;11;4;sec;1;0;;1.1731.029;t_HC2_Rgn_remaining_F1;;ED1_18 (BVNG_BL100);#14588 SmartAGN;1;;;;Tx_62;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC1_RemainTimeBeforeRegenSXU;0012.089203.012.470.0;;180063;1222;12;4;sec;1;0;;1.1731.010;t_HC1_Rgn_necessary_F1;;ED1_18 (BVNG_BL100);#14588 SmartAGN;1;;;;Tx_63;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;SCRHC2_RemainTimeBeforeRegenSXU;0012.089204.012.470.0;;180064;1222;13;4;sec;1;0;;1.1731.030;t_HC2_Rgn_necessary_F1;;ED1_18 (BVNG_BL100);#14588 SmartAGN;1;;;;Tx_64;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_SCR_HC1_DepositionSXU;0012.089203.154.400.0;;180065;1222;14;4;sec;1;0;;1.1731.006;t_HC1_Load_Lim_HI1_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_65;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_SCR_HC1_DepositionSXU;0012.089203.164.400.0;;180066;1222;15;4;sec;1;0;;1.1731.007;t_HC1_Load_Lim_HI2_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_66;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHIHI_SCR_HC1_DepositionSXU;0012.089203.174.400.0;;180067;1222;16;4;sec;1;0;;1.1731.008;t_HC1_Load_Lim_HI3_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_67;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_SCR_HC2_DepositionSXU;0012.089204.154.400.0;;180068;1222;17;4;sec;1;0;;1.1731.026;t_HC2_Load_Lim_HI1_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_68;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_SCR_HC2_DepositionSXU;0012.089204.164.400.0;;180069;1222;18;4;sec;1;0;;1.1731.027;t_HC2_Load_Lim_HI2_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_69;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHIHI_SCR_HC2_DepositionSXU;0012.089204.174.400.0;;180070;1222;19;4;sec;1;0;;1.1731.028;t_HC2_Load_Lim_HI3_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_70;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;MaxRAConsumptionSXU;0012.024427.154.400.0;;180072;1222;20;4;l/h;1000;0;;1.0721.072;Vt_RA_dosing_max_SMA_SUDU1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_72;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_SCR_HC1_RegenerationSXU;0012.089203.234.400.0;;180073;1222;21;4;sec;1;0;;1.1731.013;t_HC1_Load_Lim_Rgn_necessary_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_73;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_SCR_HC2_RegenerationSXU;0012.089204.234.400.0;;180074;1222;22;4;sec;1;0;;1.1731.014;t_HC2_Load_Lim_Rgn_necessary_F1;;ED1_17 (GLNG_BL30);#14588 SmartAGN;1;;;;Tx_74;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;EGAT_Bypass_PositionSXU;0012.058603.010.400.0;;180075;1222;23;4;digit;1;0;;1.9920.043;EGAT_EmergByp_Position;;ED1_17 (GLNG_BL30);#14588 SmartAGN:  0 = bypass flap is moving 1 = bypass flap is closed 2 = bypass flap is open 3 = bypass flap position is invalid;1;;;;Tx_75;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_EngineOverspeed;0010.000501.165.000.0;;110003;1000;2;2;digit;1;FB1Alarm;30;;SS Overspeed (ECU);;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4 ;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_P_LubeOil;0010.025101.105.000.0;;110029;1001;3;2;digit;1;FB1Alarm;15;;LO P-Lube Oil (ECU);;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LOLO_P_LubeOil;0010.025101.115.000.0;;110030;1001;4;2;digit;1;FB1Alarm;16;;LOLO P-Lube Oil (ECU);;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_P_Coolant;0010.015101.105.000.0;;110039;1001;13;2;digit;1;FB1Alarm;57;;LO P-Coolant;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LOLO_P_Coolant;0010.015101.115.000.0;;110040;1001;14;2;digit;1;FB1Alarm;58;;LOLO P-Coolant;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_P_FuelafterFilter;0010.020101.105.000.0;;110047;1001;21;2;digit;1;FB1Alarm;65;;LO P-Fuel;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LOLO_P_FuelafterFilter;0010.020101.115.000.0;;110048;1001;22;2;digit;1;FB1Alarm;66;;LOLO P-Fuel;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_P_ChargeAir;0010.008101.155.000.0;;110050;1001;24;2;digit;1;FB1Alarm;448;;HI P-Charge Air (a);;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_P_LubeOilFilterDiff;0010.025103.155.000.0;;110054;1002;3;2;digit;1;FB1Alarm;25;;HI P-Oil Filter Difference;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_CoolantLevel;0010.015301.105.000.0;;110055;1002;4;2;digit;1;FB1Alarm;23;;LO Coolant Level;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_FuelLeakageLevel;0010.020301.155.000.0;;110056;1002;5;2;digit;1;FB1Alarm;27;;HI Fuel Leakage;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_ETC1Speed;0010.056001.155.010.0;;110058;1002;7;2;digit;1;FB1Alarm;31;;HI ETC 1 Overspeed;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4. Fehlt in 5000/A155;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_ETC1Speed;0010.056001.165.010.0;;110070;1002;19;2;digit;1;FB1Alarm;32;;HIHI ETC 1 Overspeed;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_AnalogSpeedDemand;0010.000604.205.000.0;;110118;1004;17;2;digit;1;FB1Alarm;266;;AL RCS Speed Demand Defect;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_CANSpeedDemand;0010.000610.205.010.0;;110118;1004;17;2;digit;1;FB1Alarm;836;;AL RCS Speed Demand Defect;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LO_ECUPS_Voltage;0010.050101.105.000.0;;110122;1004;21;2;digit;1;FB1Alarm;118;;LO ECU Power Supply Voltage;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_ECUPS_Voltage;0010.050101.155.000.0;;110123;1004;22;2;digit;1;FB1Alarm;120;;HI ECU Power Supply Voltage;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_Coolant;0010.015201.155.000.0;;110129;1005;3;2;digit;1;FB1Alarm;67;;HI T-Coolant (ECU);;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_Coolant;0010.015201.165.000.0;;110130;1005;4;2;digit;1;FB1Alarm;68;;HIHI T-Coolant (ECU);;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ChargeAir;0010.008201.155.000.0;;110133;1005;7;2;digit;1;FB1Alarm;5;;HI T-Charge Air;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_LubeOil;0010.025201.155.000.0;;110143;1005;17;2;digit;1;FB1Alarm;51;;HI T-Lube Oil;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_LubeOil;0010.025201.165.000.0;;110144;1005;18;2;digit;1;FB1Alarm;52;;HIHI T-Lube Oil;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustCombinedA;0010.006401.155.010.0;;110147;1005;21;2;digit;1;FB1Alarm;19;;HI T-Exhaust Combined A;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ExhaustCombinedB;0010.006401.155.020.0;;110150;1005;24;2;digit;1;FB1Alarm;21;;HI T-Exhaust Combined B;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_ChargeAir;0010.008201.165.000.0;;110168;1006;17;2;digit;1;FB1Alarm;6;;HIHI T-Charge Air;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_ECU;0010.057304.155.000.0;;110170;1006;19;2;digit;1;FB1Alarm;122;;HI T-ECU;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU4;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LOLO_EngineSpeed;0010.000501.115.000.0;;110177;1007;1;2;digit;1;FB1Alarm;89;;SS Engine Speed too low;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU5;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_CheckECUErrorCode;0010.078005.200.000.0;;110178;1007;2;2;digit;1;FB1Alarm;---;;AL ECU Error/ Check Error Code;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU6;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_Fuel;0010.020201.165.000.0;;110200;1007;24;2;digit;1;FB1Alarm;4;;HIHI T-Fuel;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU7;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_LOLO_ECUPS_Voltage;0010.050101.115.000.0;;110270;1010;19;2;digit;1;FB1Alarm;119;;LOLO ECU Power Supply Voltage;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU8;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_ECUPS_Voltage;0010.050101.165.000.0;;110271;1010;20;2;digit;1;FB1Alarm;121;;HIHI ECU Power Supply Voltage;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU9;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_ExhaustCombinedA;0010.006401.165.010.0;;110296;1011;20;2;digit;1;FB1Alarm;20;;HIHI T-Exhaust Combined A;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU10;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HIHI_T_ExhaustCombinedB;0010.006401.165.020.0;;110297;1011;21;2;digit;1;FB1Alarm;22;;HIHI T-Exhaust Combined B;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU11;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_HI_T_Fuel;0010.020201.155.000.0;;110299;1011;23;2;digit;1;FB1Alarm;3;;HI T-Fuel;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU12;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;ST_AL_MCROverload;0010.002501.205.000.0;;110390;1015;14;2;digit;1;FB1Alarm;390;;AL MCR Overload;;ED1_18 (BVNG_BL100);#14588 SmartAGN ECU13;1;;;;;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;#BEZUG!;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_ExhaustSCRInlet1_redundantECU;0012.006503.010.010.0;P-Exhaust SCR Inlet 1 rdnt;110743;1029;17;2;bar;100000;0;;;;;ED1_20 (BL120);#15948: GO Navy - ECU9+HUG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_DosingAirSUDU1;0012.010200.010.000.0;P-Air SUDU1;110761;1030;10;2;bar;100000;0;;;;;ED1_20 (BL120);#15948: GO Navy - ECU9+HUG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_ExhaustSCROutlet1;0012.006504.010.000.0;P-Exhaust SCR Outlet 1;110764;1030;13;2;bar;100000;0;;;;;ED1_20 (BL120);#15948: GO Navy - ECU9+HUG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_ExhaustSCROutlet2;0012.006505.010.000.0;P-Exhaust SCR Outlet 2;110765;1030;14;2;bar;100000;0;;;;;ED1_20 (BL120);#15948: GO Navy - ECU9+HUG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_RAatPFMECU;0012.024100.164.000.0;LM HIHI T-RA at PDM;110766;1030;15;2;degC;100;0;;;;;ED1_20 (BL120);#15948: GO Navy - ECU9+HUG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;TM_OperatingMode;0012.089008.010.000.0;TM Operating Mode;110738;1029;12;2;digit;1;0;;;;;ED1_20 (BL120);#15948: GreenOcean;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;Cmd_ExternalRawWaterPump;0010.016008.013.000.0;Cmd_ExternalRawWaterPump;112644;1085;9;2;Binary;1;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;Cmd_SeaWaterInductor;0010.016009.013.000.0;Cmd_SeaWaterInductor;112643;1085;8;2;Binary;1;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_RawWaterCoolerOutlet;0010.016203.010.000.0;T_RawWater_Cooler_outl;110744;1029;18;2;degC;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_RawWaterCoolerOutlet;0010.016203.154.000.0;LM HI T_RawWater_Cooler_outl;110745;1029;19;2;degC;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_RawWaterCoolerOutlet;0010.016203.164.000.0;"LM HIHI T_RawWater_Cooler_outl / - (1?);0 (Actuation)";110746;1029;20;2;degC;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_RawWaterCoolerInlet;0010.016204.010.000.0;"T_RawWater_Cooler_inl / - (1?);0 (Actuation)";110747;1029;21;2;degC;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_RawWaterCoolerInlet;0010.016204.154.000.0;"LM HI T_RawWater_Cooler_inl / - (1?);0 (Actuation)";110748;1029;22;2;degC;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_RawWaterCoolerInlet;0010.016204.164.000.0;"LM HIHI T_RawWater_Cooler_inl / - (1?);0 (Actuation)";110749;1029;23;2;degC;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_CoolantEngineInlet;0010.015203.010.000.0;"T_Coolant_Engine_inl / - (1?);0 (Actuation)";110755;1030;4;2;degC;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_CoolantEngineInlet;0010.015203.154.000.0;"LM HI T_Coolant_Engine_inl / - (1?);0 (Actuation)";110756;1030;5;2;degC;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_CoolantEngineInlet;0010.015203.164.000.0;"LM HIHI T_Coolant_Engine_inl / - (1?);0 (Actuation)";110757;1030;6;2;degC;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_T_CoolantEngineInlet;0010.015203.104.000.0;LM LO T_Coolant_Engine_inl ;110762;1030;11;2;degC;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;T_CoolantAfterCooler;0010.015204.010.000.0;"T_coolant_af_cooler / - (1?);0 (Actuation)";112640;1085;5;2;degC;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_T_CoolantAfterCooler;0010.015204.154.000.0;"T_coolant_af_cooler_HI1 / - (1?);0 (Actuation)";112641;1085;6;2;degC;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_T_CoolantAfterCooler;0010.015204.164.000.0;"T_coolant_af_cooler_HI2 / - (1?);0 (Actuation)";112642;1085;7;2;degC;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_P_RawWaterPumpInlet;0010.016103.114.000.0;"LM LOLO P-Raw Water / - (1?);0 (Actuation)";112637;1085;2;2;bar;100000;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_RawWaterPumpInlet;0010.016103.010.000.0;"p_RawWater_Pump_inl / - (1?);0 (Actuation)";112638;1085;3;2;bar;100000;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_RawWaterPumpInlet;0010.016103.104.000.0;"LM LO p_RawWater_Pump_inl / - (1?);0 (Actuation)";112639;1085;4;2;bar;100000;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_LubeOilPistoncoolECU;0010.025108.010.010.0;"P-Lube Oil Pistoncooling / - (1?);0 (Actuation)";110179;1007;3;2;bar;100000;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_LubeOilPistoncoolECU;0010.025108.104.010.0;"LM LO P-Lube Oil Pistoncooling / - (1?);0 (Actuation)";110180;1007;4;2;bar;100000;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_P_LubeOilPistoncoolECU;0010.025108.114.010.0;"LM LOLO P-Lube Oil Pistoncool. / - (1?);0 (Actuation)";110181;1007;5;2;bar;100000;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_LubeOilLastBearingECU;0010.025106.010.010.0;"P-Schmieröl letztes Lager / - (1?);0 (Actuation)";110207;1008;6;2;bar;100000;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_LubeOilLastBearingECU;0010.025106.104.010.0;"P-Schmieröl letztes Lager, UGW 1 / - (1?);0 (Actuation)";110208;1008;7;2;bar;100000;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LOLO_P_LubeOilLastBearingECU;0010.025106.114.010.0;"P-Schmieröl letztes Lager, UGW 2 / - (1?);0 (Actuation)";110214;1008;13;2;bar;100000;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_ExhaustEngineOutlet;0010.006101.010.010.0;"p_Exhaust / - (1?);0 (Actuation)";110752;1030;1;2;mbar;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_P_ExhaustEngineOutlet;0010.006101.154.010.0;"LM HI p_Exhaust / - (1?);0 (Actuation)";110753;1030;2;2;mbar;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HIHI_P_ExhaustEngineOutlet;0010.006101.164.010.0;"LM HIHI p_Exhaust / - (1?);0 (Actuation)";110754;1030;3;2;mbar;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_CoolantAfterCooler;0010.015108.010.000.0;"p_coolant_af_cooler / - (1?);0 (Actuation)";110750;1029;24;2;bar;100000;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_CoolantAfterCooler;0010.015108.104.000.0;"MonLim_p_coolant_af_cooler_Lo1 / - (1?);0 (Actuation)";110751;1030;0;2;bar;100000;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_CoolantCoolerInlet;0010.015106.010.000.0;"p_Coolant_Cooler_inl / - (1?);0 (Actuation)";110758;1030;7;2;bar;100000;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_CoolantCoolerInlet;0010.015106.104.000.0;"LM LO p_Coolant_Cooler_inl / - (1?);0 (Actuation)";110759;1030;8;2;bar;100000;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_IntakeAirETC4;0010.005107.010.000.0;p_IntakeAir_ETC4;110773;1030;22;2;mbar;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_IntakeAirETC4;0010.005107.104.000.0;LM LO p_Intake_Air ETC4;110774;1030;23;2;mbar;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_IntakeAirETC3;0010.005106.010.000.0;p_IntakeAir_ETC3;110771;1030;20;2;mbar;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_IntakeAirETC3;0010.005106.104.000.0;LM LO p_Intake_Air ETC3;110772;1030;21;2;mbar;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_IntakeAirETC2;0010.005105.010.000.0;p_IntakeAir_ETC2;110769;1030;18;2;mbar;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_IntakeAirETC2;0010.005105.104.000.0;LM LO p_Intake_Air ETC2;110770;1030;19;2;mbar;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;P_IntakeAirETC1;0010.005104.010.000.0;p_IntakeAir_ETC1;110767;1030;16;2;mbar;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_P_IntakeAirETC1;0010.005104.104.000.0;LM LO p_Intake_Air ETC1;110768;1030;17;2;mbar;100;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LevelFuelLeakageBankB;0010.020305.010.000.0;"Lev_Fuel_Leackage_BankB / - (1?);0 (Actuation)";110292;1011;16;2;Binary;1;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LevelLubeOilPan;0010.025204.010.000.0;Lev_LubeOil_OilPan;112646;1104;15;2;mm;1000;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_HI_LevelLubeOilPan;0010.025204.154.000.0;LM HI1 Lev_LubeOil_OilPan;112647;1104;16;2;mm;1000;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;LM_LO_LevelLubeOilPan;0010.025204.104.000.0;LM LO1 Lev_LubeOil_OilPan;112648;1104;17;2;mm;1000;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;Cmd_RefillPumpOn;0010.025401.013.000.0;CMD Oil Refill Pump;112645;1085;10;2;Binary;1;0;;;;;ED1_20 (BL120);#15947: BR8000 IMO2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;CoolantLevelInterCooler;0010.015302.010.000.0;Coolant Level Intercooler;110293;1011;17;2;digit;1;0;;;;;ED1_20(BL120);EIM Refitbox ECU4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;HI T-Charge Air Seq Ctrl Valve;0010.008202.155.000.0;HI T-Charge Air Seq Ctrl Valve;110294;1011;18;2;digit;1;FB1Alarm;85;;;;ED1_20(BL120);EIM Refitbox ECU4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;HIHI T-Charge Air Seq Ctrl Val;0010.008202.165.000.0;HIHI T-Charge Air Seq Ctrl Val;110295;1011;19;2;digit;1;FB1Alarm;86;;;;ED1_20(BL120);EIM Refitbox ECU4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

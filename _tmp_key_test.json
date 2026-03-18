@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "imports": {},
+  "update_files": [],
+  "xsd_overrides": {},
+  "manual_targets": {
+    "A.XML": {
+      "element_name": "RX",
+      "complex_type_name": "RX_type"
+    },
+    "B.XML": [
+      {
+        "element_name": "RX",
+        "complex_type_name": "RX_type"
+      },
+      {
+        "element_name": "TX",
+        "complex_type_name": "TX_type"
+      },
+      {
+        "element_name": "TX",
+        "complex_type_name": "TX_type"
+      }
+    ],
+    "C.XML": [
+      {
+        "element_name": "RX",
+        "complex_type_name": "RX_type"
+      },
+      {
+        "element_name": "TX",
+        "complex_type_name": "TX_type"
+      }
+    ]
+  }
+}
